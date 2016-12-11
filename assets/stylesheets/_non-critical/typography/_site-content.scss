@@ -1,0 +1,24 @@
+
+
+
+.entry-content, aside p, .entry-footer{ 
+	line-height: 2.1em;
+
+	//medium screens and up
+	@media screen and (min-width: 40.063em) {
+		line-height: 1.6em;
+	}
+}
+.entry-header h2{
+	margin: 0.7em 0 0.2em 0;
+	font-size: 1.38em;
+}
+@media (min-width: 40em) {
+	.entry-content, aside p{
+		font-size: 1em;
+		line-height: 1.9em;
+	}
+	.entry-footer{
+		font-size: 0.8em; 
+	}
+}

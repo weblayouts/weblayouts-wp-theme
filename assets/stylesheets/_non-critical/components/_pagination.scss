@@ -1,0 +1,26 @@
+
+/**
+ * ".wp-pagenavi"
+ * ....
+*/
+.wp-pagenavi{
+	.pages{
+		display: none;
+	}
+	a, .current{
+		padding: 6px 10px;
+		border-width: 0!important;
+		&:hover{
+			color: $color__background-body;
+			background-color: $color__text-headings;
+		}
+	}
+	a{
+		background: #999;
+    	color: #fff;
+	}
+	.current{
+		color: $color__background-body;
+		background-color: $color__link;
+	}
+}

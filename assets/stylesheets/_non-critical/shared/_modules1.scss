@@ -1,0 +1,12 @@
+
+.double-border-bottom, .double-border-top{
+	@include double-border(); 
+}
+
+.double-border-bottom{
+	@include double-border-bottom();
+}
+.double-border-top{
+	@include double-border-top();
+}
+

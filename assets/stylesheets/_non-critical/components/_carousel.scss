@@ -1,0 +1,77 @@
+
+/**
+ * ".carousel"
+ * ....
+*/
+.carousel{ 
+	.entry-title, .entry-meta{
+		position: relative; 
+		//Make sure slide content is above
+		//any opaque screen
+		z-index: 5;
+		a, .fa{
+			color: #fff;
+		}
+		a{ 
+			text-decoration: none;
+			&:hover{
+				color: $color__link;
+			}
+		}
+	}  
+
+	.post-thumbnail{
+		position: relative; 
+	} 
+}
+.carousel-indicators{
+	$frame-width: 600px;
+	$width: 40px;
+	$height: 26px;
+
+	width: $frame-width;
+	left : -($frame-width)/2;
+	margin-left: 50%;
+	padding-left: 0.9375rem;
+	li{
+		float: left;
+		margin-right: 4px;
+		position: relative;
+		display: inline-block;
+	    width: $width;
+	    height: $height; 
+	    border-width: 0px; 
+	    border-radius: 0px;
+	    background: transparent; 
+	    &:hover{
+		    &:after{
+	    		opacity: 0.8;
+		    }
+	    }
+	    &.active{ 
+	    	margin: 1px;
+			margin-right: 4px;
+	    	width: $width;
+	    	height: $height; 
+	    	background: transparent;
+	    	&:after{ 
+	    		background: $color__link; 
+	    		opacity: 1;
+	    	} 
+	    }
+	    &:after{
+	    	$a-height: 3px;
+	    	position: absolute;
+	    	top: ($height - $a-height)/2;
+	    	left: 0; 
+	    	content: '';
+	    	background-color: $color__link; 
+		    width: 100%;
+		    height: $a-height;
+	    	opacity: 0.6;
+	    }
+	}
+}
+
+
+

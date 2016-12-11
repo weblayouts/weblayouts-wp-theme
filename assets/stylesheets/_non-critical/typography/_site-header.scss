@@ -1,0 +1,22 @@
+
+.site-header h1,
+.site-header p{
+	margin:0;
+}
+.site-header h1{
+	margin-bottom: 0.2em;
+	line-height: 1.0em; 
+	/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+	@media only screen and (max-width: 40em) { 
+		font-size: 1.5em;
+	}
+}
+.site-header p{
+	font-size: 0.6em;
+	line-height: 1.3em;
+	color: #ccc;
+}
+
+.menu-toggle{
+	font-size: 0.9em;
+}

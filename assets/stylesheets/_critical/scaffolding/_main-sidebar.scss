@@ -1,0 +1,20 @@
+
+
+
+
+.main-sidebar{
+    $translate-distance : 300px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    z-index: 40;
+    width: $translate-distance;
+    //hide it for now
+    transform: translate(-#{$translate-distance} , 0);
+
+    //Hide for larger devices ...
+    @media only screen and (min-width: 62.000em){//992px
+        display: none;
+    }
+}

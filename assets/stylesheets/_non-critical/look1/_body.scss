@@ -1,0 +1,15 @@
+body{
+	color: $color__text-input;
+	background-color: $color__background-screen;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: $color__text-headings;
+}
+
+
+a{
+	&:hover{
+		color: $color__link;
+	}
+}

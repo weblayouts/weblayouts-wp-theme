@@ -1,0 +1,35 @@
+
+
+
+// .row{
+// 	max-width: 62.5rem;
+// }
+
+// @media only screen and (min-width: 75.000em){
+// 	.row {
+// 	    max-width: 73.125em;
+// 	}
+// }
+
+@media only screen and (min-width: 48.000em){//768px
+	.row {
+		max-width: 46.875em; //750px; 
+	}
+}
+
+@media only screen and (min-width: 62.000em){//992px
+	.row {
+		max-width: 60.625em;//970px;
+	}
+} 
+
+@media only screen and (min-width: 75.000em){//1200px
+	.row {
+		max-width: 73.125em;//1170px;
+	}
+}  
+
+
+
+
+

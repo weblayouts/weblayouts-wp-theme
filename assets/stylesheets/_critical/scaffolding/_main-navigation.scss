@@ -1,0 +1,84 @@
+
+/**
+ * ".main-navigation"
+ * ....
+*/
+.main-navigation {
+	display: flex;
+	align-items: center; //center items vertically
+	clear: both;  
+ 
+	// Medium screens
+	@media only screen and (min-width: 40.063em) { 
+		height: 60px; //looks like IE 11 and < doesn't like "min-height"
+		> ul{
+			&:first-child{
+				margin-right: auto;
+    			// li{ margin-right: 20px; }
+			}
+			&:last-child{
+				margin-left: auto;
+				// li{ margin-left: 20px; }
+			}
+			margin: 0;
+    		padding: 0;
+			li{
+				display: inline-block;
+			}
+		} 
+	} /* min-width 641px, medium screens */
+
+	ul {  
+		margin: 0;
+		padding-left: 0;
+		// ul {
+		// 	float: left;
+		// 	position: absolute;
+		// 	top: 1.5em;
+		// 	left: -999em;
+		// 	z-index: 99999;
+
+		// 	a {
+		// 		width: 200px;
+		// 	}
+
+		// 	ul {
+		// 		left: -999em;
+		// 		top: 0;
+		// 	}
+
+		// 	li {
+		// 		&:hover > ul,
+		// 		&.focus > ul {
+		// 			left: 100%;
+		// 		}
+		// 	}
+		// }
+	}
+	
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+}
+
+/* Small menu. */
+// UNCOMMENT THIS LATER
+// .menu-toggle,
+// .main-navigation.toggled ul {
+// 	display: block;
+// }
+
+// .menu-toggle:before {
+// 	content: "\2630";
+// 	display: inline-block;
+// 	margin-right: 5px;
+// }

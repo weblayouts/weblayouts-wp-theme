@@ -1,0 +1,55 @@
+.page-hero{
+	.btn-push-down{  
+	    background: url(img/sprite.png);
+	}
+	
+
+    // I'm removing Bootstrap
+    // ----------------------
+    // .carousel-control{
+    //     .icon-prev, .icon-next{
+    //         color: $color__link;
+    //         font-size: 40px;
+    //     }
+    //     .icon-prev{
+    //         right: 20px;
+    //         left: initial;
+    //     }
+    //     .icon-next{
+    //         left: 0px;
+    //     }
+    //     @media only screen and (min-width: 62em){
+    //         width: 20%;
+    //     }
+    // }
+}
+
+
+
+.page-hero{ 
+    $slide-height: 220px;
+ 
+    .item-excerpt{  
+        color: #fff;
+        .item-title{
+            color: #fff;
+            a{ 
+                color: #fff;
+            }
+            margin-top: 0; 
+        }
+    }
+    .item-cta{
+        color: $color__link;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        } 
+    }
+    .carousel-indicators{
+        bottom: 100px;
+        @media only screen and (max-width: 61.999em){//992px
+            display: none;
+        }
+    }
+}

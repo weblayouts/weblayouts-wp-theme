@@ -1,0 +1,37 @@
+.text-uppercase{
+	text-transform: uppercase;
+}
+.text-right{
+	text-align: right;
+}
+
+.flex-container{
+	display: flex;
+}
+.y-align-items-center{
+	align-items: center;
+}
+.x-align-items-center{
+	justify-content: center;
+}
+.mg-left-auto{
+	margin-left: auto;
+}
+.mg-right-auto{
+	margin-right: auto;
+}
+
+
+
+.list-unstyled{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	list-style: none; 
+}
+.list-inline{
+	li{
+		display: inline-block;
+	} 
+}

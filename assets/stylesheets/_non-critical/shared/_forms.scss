@@ -1,0 +1,97 @@
+@import 'buttons';
+
+
+form{
+	::-webkit-input-placeholder {
+	   color: $color__placeholder;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: $color__placeholder;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: $color__placeholder;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: $color__placeholder;  
+	}
+
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],
+	input[type="submit"],
+	button,
+	textarea {
+		padding: 5px 14px;
+		border-width: 0; 
+		min-height: 48px!important;
+		width: 100%;
+		outline: none; 
+		&:focus {
+			color: $color__text-input-focus;
+		}
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="range"],
+	input[type="date"],
+	input[type="month"],
+	input[type="week"],
+	input[type="time"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="color"],  
+	textarea {
+		background: $color__background-button; 
+	}
+
+
+	button, .button{
+		&:hover, &:active, &:focus{
+			background-color: $color__link;
+		}
+	}
+
+	select {
+		border: 1px solid $color__border-input;
+	}
+
+
+
+	textarea {
+		width: 100%;
+	}
+
+
+	.ajax-loader{
+		visibility: visible;
+	    position: fixed;
+	    z-index: 9999;
+	    top: 50%;
+	    left: 50%;
+	}
+
+	p:lest-child{
+		margin-bottom: 0;
+	}
+}//form

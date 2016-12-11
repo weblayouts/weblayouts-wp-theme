@@ -1,0 +1,21 @@
+
+
+// -------- MIXINS -------------
+@import 'utilities/mixins/mixins-base';
+
+// -------- VARIABLES -------------
+@import 'utilities/variables/variables-base';
+@import 'utilities/utils';  
+
+// -------- VENDORS ------------- 
+// @import '_asynchronous/vendors/foundation.6.2.4';
+
+// -------- ..... -------------
+@import '_critical/scaffolding/body';
+@import '_critical/scaffolding/site-header';
+@import '_critical/scaffolding/main-sidebar';
+@import '_critical/scaffolding/main-navigation';
+@import '_critical/scaffolding/page-hero';
+@import '_critical/scaffolding/content-latest-articles';
+@import '_critical/components/mix';
+@import '_critical/components/skip-link';

@@ -1,0 +1,79 @@
+
+.site-header{ 
+	position: absolute;
+	width: 100%;
+    z-index: 20;
+
+    > .flex-container{
+    	@media only screen and (min-width: 62em){
+	    	height: 200px; 
+		}
+    }
+
+    .main-logo.main-logo-small{
+    	position: absolute;
+	    left: 20px;
+	    top: 10px;
+		width: 150px;
+    }
+
+    .logo-branding{  
+		&.logo-large{
+			display:none;
+    		width: 220px;
+		}
+		&.logo-small{
+			display:block;
+			width: 150px;
+		}
+ 
+    	@media only screen and (min-width: 62em){
+			&.logo-large{
+				display:block;
+			}
+			&.logo-small{
+				display:none;
+			}
+		} 
+    }
+
+    .btn-hamburger{ 
+	    position: absolute;
+	    top: 15px;
+	    right: 15px;
+	    line-height: 0.7em;
+	    font-size: 1.1em;
+	    //Hide on larger devices ...
+	    @media only screen and (min-width: 62.000em){//992px 
+			display: none; 
+	    }
+    }
+    //Hide on less than larger devices ...
+    @media only screen and (max-width: 61.999em){//992px
+        .main-navigation{
+			display: none;
+		}
+    }
+
+
+
+}
+
+
+
+.logo-branding-large{
+	display: none; 
+	@media only screen and (min-width: 62em){
+		display: block;
+	}
+}
+.logo-branding-small{
+	display: block;
+	@media only screen and (min-width: 62em){
+		display: none;
+	}
+ 
+	width: 150px; 
+	height: 68px; 
+	background:lime; 
+}

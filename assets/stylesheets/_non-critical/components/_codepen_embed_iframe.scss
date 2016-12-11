@@ -1,0 +1,9 @@
+
+//embeded code from code pen or others
+.cp_embed_iframe, .line-numbers{
+	width: 120%;
+    @media only screen and (min-width: 55.625em) { //890px
+        $unit : -10%;
+        margin-left: $unit !important; 
+    }
+}

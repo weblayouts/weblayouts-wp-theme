@@ -1,0 +1,83 @@
+
+
+//colors ..
+.main-navigation{ 
+	@media only screen and (min-width: 62em){ 
+		a{ 
+			&:focus{
+				border-color: #fff; 
+			}
+		}
+	}
+}
+
+
+.main-logo, .btn-hamburger{
+	&:focus{
+		@media only screen and (min-width: 62em){ 
+			border: 3px solid #fff;
+		} 
+	}
+}
+
+.list--catfilter a {
+	&:focus{
+		border: 3px solid #000; 
+	}
+}
+
+.wp-pagenavi a{
+	&:focus{
+		background: #000; 
+	}
+}
+
+.post-sample .label{
+	&:focus{
+		border: 3px solid #fff; 
+	}
+}
+
+ 
+
+.main-navigation a{
+	&:focus{
+		color: $color__link;
+		text-decoration: none;
+	} 
+}
+
+.widget a, .entry-footer a, .entry-content a,
+.main-footer .main-navigation a, .main-footer p a{
+	&:focus{
+		background-color: $color__link;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.footer-copyright .list-inline a{
+	&:focus{
+		text-decoration: none;
+		.fa{
+			color: $color__link;
+		}
+	}
+}
+
+
+
+
+
+
+.main-navigation a, .main-logo, .list--catfilter a,
+.entry-content a, .entry-footer a, .widget a,
+.wp-pagenavi a, .main-footer p a,
+.footer-copyright .list-inline a,
+.post-sample .label, .btn-hamburger, .skip-link{ 
+	&:focus{ 
+		outline: 0;
+	}
+}
+
+

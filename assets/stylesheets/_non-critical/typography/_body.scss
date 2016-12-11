@@ -1,0 +1,22 @@
+
+body{
+    @include font-family-sans-serif(); 
+	font-size: 14px;
+	line-height: 1.35em;
+
+	//medium screens and up
+	@media screen and (min-width: 40.063em) {
+		font-size: 16px;
+		line-height: 1.25em;
+	}
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    @include font-family-sans-serif();  
+	font-weight: 900;
+}
+
+button, .button, .btn{
+    @include font-family-serif(); 
+	text-transform: uppercase;
+}

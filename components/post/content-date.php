@@ -1,0 +1,1 @@
+<?php web_layouts_posted_date(); ?>

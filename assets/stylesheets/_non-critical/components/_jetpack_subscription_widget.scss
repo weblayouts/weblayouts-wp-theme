@@ -1,0 +1,14 @@
+.jetpack_subscription_widget{
+	.success, .error{
+		margin-bottom: 30px;
+		padding: 10px 20px;
+	}
+	.success{
+		color: $color__success;
+		background-color : $color__success_light;
+	}
+	.error{
+		color: $color__error;
+		background-color : $color__error_light;
+	}
+}

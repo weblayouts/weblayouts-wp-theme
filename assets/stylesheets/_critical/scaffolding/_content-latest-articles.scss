@@ -1,0 +1,23 @@
+.content-latest-articles{
+	$gap : 20px; 
+
+	&::before, &::after {
+	    content: ' ';
+	    display: table;
+	}
+	&::after {
+	    clear: both;
+	}
+
+	.post-sample-frame{ 
+		@media only screen and (min-width: 62em){  
+			float: left;
+			padding-left: $gap;
+			padding-right: $gap;
+			width: percentage(1/2); 
+		}
+		@media only screen and (min-width: 74.999em){ 
+			width: percentage(1/3); 
+		}
+	}
+}

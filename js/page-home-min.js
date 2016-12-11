@@ -1,0 +1,2 @@
+"use strict";wl_document.ready().then(function(){wl_document.stylesheetLoaded("non-critical").then(function(){window.setTimeout(function(){console.log(">>>>>> [non-critical] loaded!!!!");var e=new Masonry(".content-latest-articles",{itemSelector:".post-sample-frame"})},500)}),console.log(">>>>>>",document.querySelector('link[href*="non-critical"'))});
+//# sourceMappingURL=./page-home-min.js.map

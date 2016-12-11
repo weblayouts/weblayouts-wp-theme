@@ -1,0 +1,223 @@
+
+
+
+
+blockquote{
+    border-left: 2px solid $color__link;
+    margin-left: 0;
+    padding: 10px 10px 10px 50px;
+    font-style: italic; 
+    color: $color__text-headings;
+    @include font-family-serif(); 
+}
+
+
+
+
+/*===================================*/
+/*               widget              */
+/*===================================*/
+.widget{
+    margin-bottom: 5em;
+}
+.widget-title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    
+    span{
+        position: relative;
+        z-index: 2;
+        background: $color__background-screen;
+        padding: 0 20px;
+    }
+    &:after{
+        position: absolute;
+        content:'';
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        background-color: $color__link;
+        z-index: 1;
+    }
+
+}
+
+
+.widget figure{
+    margin: 0;
+}
+.widget h3{
+    margin-bottom: 0;
+    font-style: 1.3em;
+}
+
+
+
+
+
+/*===================================*/
+/*           author widget            */
+/*===================================*/
+.widget_wl_authorinfo_widget p:last-of-type{
+    margin-bottom: 0.5em;
+}
+
+.widget_wl_authorinfo_widget .widget-footer{
+    padding-top: 15px; 
+}
+
+.widget_wl_authorinfo_widget .widget-footer ul{
+    margin: 0;
+    padding: 0;
+}
+
+.widget_wl_authorinfo_widget .widget-footer ul li{
+    display: inline-block;
+}
+.widget_wl_authorinfo_widget {
+    figure{
+        width: 100px;
+        float: left;
+        margin-right: 20px;
+    }
+    p{
+        line-height: 1.5em;
+    }
+}
+
+
+
+
+
+/*===================================*/
+/*     Most Popular Post widget      */
+/*===================================*/
+.widget-most-popular-list{
+    line-height: 1.5em;
+    li{
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 40em){
+        column-count: 3;
+        column-gap: 30px;
+        li{
+            margin-bottom: 40px;
+        }
+    }
+}
+.wli_popular_posts-class{
+    .post-thumbnail{
+        display: none;
+    }
+}
+
+
+
+
+
+/*===================================*/
+/*     Most Popular Post widget      */
+/*===================================*/
+.jetpack_subscription_widget{
+    form{
+        display: flex;
+        border-radius: $form-elts-radius;
+        border: 1px solid $color__link;
+    }
+    .widget-title,
+    #subscribe-text{
+        display: none;
+    }
+    #subscribe-email{
+        flex: 1;
+        input{
+            width: 98%;
+            border-right: 1px solid $color__link;
+        }
+    } 
+    #subscribe-submit, #subscribe-email{
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+/*===================================*/
+/*     Contact form 7      */
+/*===================================*/
+.wpcf7-form{
+    input[type="text"], input[type="email"], textarea{
+        border-radius: $form-elts-radius;
+        border: 1px solid $color__link;
+    }
+    input[type="submit"]{
+        border-radius: $form-elts-radius;
+        color: #fff;
+        background-color: $color__link;
+    }
+    > p{
+        > label{
+            /* max-width 640px, mobile-only styles */
+            @media only screen and (max-width: 40em) {
+                flex-direction: column;
+                span{
+                    flex: 1;
+                }
+            } 
+            // Medium screens
+            @media only screen and (min-width: 40.063em) { 
+                display: flex;
+                span:first-child{
+                    flex: 0.4;
+                }
+                .wpcf7-form-control-wrap{
+                    flex: 0.6;
+                    margin-left: auto;
+                } 
+            }
+        }
+    }
+}
+
+
+
+
+
+/*===================================*/
+/*               links               */
+/*===================================*/
+a.link-box{
+    border: 1px solid #e3e3e3;
+    padding: 0.6em 0;
+    min-width: 44px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.9em;
+    color: #000;
+}
+a.link-box:hover, 
+a.link-box:active{ 
+    background-color: #1387e0;
+    border: 1px solid #1387e0;
+    color: #fff;
+}
+
+
+ 
+
+/*===================================*/
+/*   recent posts extended widget   */
+/*===================================*/
+.rpwe-title, .rpwe-time {
+    font-weight: 700;
+}
+
+
+
+
+
+

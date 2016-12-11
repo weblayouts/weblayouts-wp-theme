@@ -1,0 +1,17 @@
+
+.site-branding{
+	.site-title{
+		a{ 
+			color: $color__text-headings;
+			text-decoration: none;
+		}
+	}
+	.site-description{
+		text-transform: uppercase;
+		color: $color__text-input;
+		/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+		@media only screen and (max-width: 40em) { 
+			font-size: 0.5em;
+		}
+	}
+} 

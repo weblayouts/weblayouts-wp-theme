@@ -1,0 +1,105 @@
+.page-hero{ 
+	margin-bottom: 80px;
+
+	.btn-push-down{
+		$dim: 32px;
+		position: absolute;
+	    bottom: 30px;
+	    margin-left: 50%;
+        left: -($dim/2);
+	    width: $dim;
+	    height: $dim;
+	    z-index: 30; 
+	}
+
+}
+.page-hero{
+    position: relative; 
+    overflow-y: hidden;
+    $slide-height: 220px;
+    height: $slide-height;
+
+    // .carousel-inner,
+    .item-content{
+        height: $slide-height;
+    } 
+    .item-content{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%; 
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .item-excerpt{ 
+        position: relative; 
+        width: 70%; 
+        max-width:600px;  
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+        z-index: 3; 
+    }
+    .item .wp-post-image{
+        position: absolute;
+        top:0;
+        left: 0;
+        max-width: 100%;
+        z-index: 1;
+    }
+    p{
+        margin-bottom: 1.2em;
+    }
+    .item-cta{ 
+        font-size: 0.85em;
+    }
+    .item-cat{
+        display: inline-block;
+        margin-bottom: 15px;
+    } 
+
+    @media only screen and (max-width: 47.999em){//768px
+    	.item-cat, .item-excerpt p { 
+            display: none; 
+        } 
+    }
+
+    @media only screen and (min-width: 48.000em){//768px
+        &.page-hero-full-screen{
+            $slide-height: 400px;
+            height: $slide-height;
+            .carousel-inner,
+            .item-content{
+                height: $slide-height;
+            }  
+        }
+    }
+    
+    //...
+    @media only screen and (min-width: 62.000em){//992px
+        &.page-hero-full-screen{
+            $slide-height: 630px;
+            height: $slide-height;
+            .carousel-inner,
+            .item-content{
+                height: $slide-height; 
+            }  
+        } 
+    }
+    
+    //...
+    @media only screen and (min-width: 75.000em){//1200px
+        &.page-hero-full-screen{
+            $slide-height: 100vh;
+            height: $slide-height;
+            .carousel-inner,
+            .item-content{
+                height: $slide-height;
+            }     
+        }
+    } 
+}
+
+
+

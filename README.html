@@ -8,15 +8,11 @@
 
 <p>Wordpress theme of weblayouts.ca with full documentation</p>
 
-<h1 id="resourcesloading">Resources loading</h1>
+<h1 id="stylesheetresourcesinorderofloading">Stylesheet resources (In order of loading)</h1>
 
-<p>This section describes how resources are loaded by the theme:</p>
-
-<h2 id="stylesheetresources">Stylesheet resources</h2>
-
-<ul>
-<li>Critical stylesheet : Stylesheet that absolutely must load before the rest of the page. Contains light styles just to give the whole layout a decent shape. Included at the end of the <code>&lt;head&gt;</code>.</li>
-</ul>
+<ol>
+<li><strong>Critical stylesheet</strong> : Stylesheet that absolutely must load before the rest of the page. Contains light styles just to give the whole layout a decent shape. Included at the end of the <code>&lt;head&gt;</code>.</li>
+</ol>
 
 <pre><code class="html">&lt;style&gt;
     @import '&lt;?php echo get_stylesheet_directory_uri(); ?&gt;/css/style-critical.css';

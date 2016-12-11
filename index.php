@@ -13,7 +13,6 @@
  */
 
 get_header(); ?> 
-	
 	<div id="primary" class="content-area row">
 		<main id="main" class="site-main medium-12 columns" role="main">   
 			

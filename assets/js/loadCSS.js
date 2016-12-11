@@ -17,10 +17,9 @@ var _version = document.getElementsByTagName('body')[0].getAttribute("data-resou
 
 
 
-// load Font Awesome from CDN 
-var nonCritical = loadCSS( document.location.origin+'/wp-content/themes/web_layouts/css/style-non-critical.css?ver='+_version );
+// load site's non-critical stylesheet 
+loadCSS( document.location.origin+'/wp-content/themes/web_layouts/css/style-non-critical.css?ver='+_version );
 
-// console.log('>>>nonCritical=', nonCritical);
 
 // load Google Web Font 
 loadCSS( 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' );

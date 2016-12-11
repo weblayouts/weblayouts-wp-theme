@@ -21,16 +21,6 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
-	"\/assets\/css\/style-async.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/assets\/css\/style-async-ck.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/assets\/js\/_not-used\/_foundation\/foundation.js": {
 		"ft": 64,
 		"mi": 1,
@@ -162,6 +152,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/min\/min\/main-script-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/min\/wl-styles-plugin-async-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/wl-styles-plugin-async-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1465,6 +1464,15 @@
 		"oAP": "\/js\/wl-styles-async-min.js.map",
 		"oF": 0
 		},
+	"\/js\/wl-styles-plugin-async-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/wl-styles-plugin-async-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/LICENSE": {
 		"ft": 8192,
 		"oA": 2,
@@ -1571,6 +1579,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single.php",
+		"oF": 0
+		},
+	"\/style-non-criticalcss\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/style-non-criticalcss\/.gitignore",
 		"oF": 0
 		},
 	"\/style.css": {

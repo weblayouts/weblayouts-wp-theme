@@ -23,6 +23,13 @@ Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/Optimiz
 ```
 
 2. **Non-critical stylesheet** : Contains the site's complete styles (loaded asynchronously via [loadCSS](https://gist.github.com/schilke/02357d9263ed28fc1769) )
+ 
+
+
+
+
+# JavaScript &amp; SCSS files processing:
+Complete processing (validation, minification, ...) done by [Codekit](https://codekitapp.com/) 
 
 
 

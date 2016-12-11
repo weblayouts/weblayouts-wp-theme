@@ -236,7 +236,7 @@ add_action( 'widgets_init', 'web_layouts_widgets_init' );
  */
 function web_layouts_scripts() { 
 	//[Foundation] Used for: "grid system"  
-	wp_enqueue_style( 'web_layouts-style', get_template_directory_uri() . '/style.css', array(), $GLOBALS['resouces-version'] ); 
+	wp_enqueue_style( 'web_layouts-info-file', get_template_directory_uri() . '/style.css', array(), $GLOBALS['resouces-version'] ); 
 
 	//JavaScript/main ...
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/weblayouts.js', array('jquery'), $GLOBALS['resouces-version'], true );
@@ -248,8 +248,12 @@ function web_layouts_scripts() {
 	if(is_home()){
 		wp_enqueue_script( 'page-home', get_template_directory_uri() . '/js/page-home-min.js', array('wl-document'), $GLOBALS['resouces-version'], true );
 	} 
-	//Load css file asynchronously
+	//Script that load stylesheets asynchronously
 	wp_enqueue_script( 'loadCSS', get_template_directory_uri() . '/js/loadCSS-min.js', array(), $GLOBALS['resouces-version'], true );
+	//Theme stylesheet files to be loaded asynchronously
+	wp_enqueue_script( 'theme-stylesheets-by-loadCSS', get_template_directory_uri() . '/js/wl-styles-theme-async-min.js', array('loadCSS'), $GLOBALS['resouces-version'], true );
+	//Plugin stylesheet files to be loaded asynchronously
+	wp_enqueue_script( 'plugin-stylesheets-by-loadCSS', get_template_directory_uri() . '/js/wl-styles-plugin-async-min.js', array('loadCSS'), $GLOBALS['resouces-version'], true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

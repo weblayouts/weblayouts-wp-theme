@@ -1,0 +1,1 @@
+var _wl_script_ver=document.getElementsByTagName("body")[0].getAttribute("data-resouces-version");loadCSS(document.location.origin+"/wp-content/themes/web_layouts/css/style-non-critical.css?ver="+_wl_script_ver),loadCSS("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"),loadCSS("https://fonts.googleapis.com/css?family=Lato:400,700,900");

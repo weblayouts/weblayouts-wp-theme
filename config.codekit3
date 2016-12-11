@@ -166,6 +166,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/js\/min\/wl-stylesheets-loaded-asynchronously-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/wl-stylesheets-loaded-asynchronously-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/page-home.js": {
 		"ft": 64,
 		"mi": 1,
@@ -226,6 +235,24 @@
 		"oA": 1,
 		"oAP": "\/assets\/js\/min\/wl-mqForAssistiveTech-min.js",
 		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/wl-styles-plugin-async.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/wl-styles-plugin-async-min.js",
+		"oF": 2,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/wl-styles-theme-async.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/wl-styles-theme-async-min.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 0
 		},
@@ -1423,6 +1450,21 @@
 		"oAP": "\/js\/wl-document-min.js.map",
 		"oF": 0
 		},
+	"\/js\/wl-styles-async-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/wl-styles-async-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/wl-styles-async-min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/wl-styles-async-min.js.map",
+		"oF": 0
+		},
 	"\/LICENSE": {
 		"ft": 8192,
 		"oA": 2,
@@ -1433,6 +1475,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page.php",
+		"oF": 0
+		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
 		"oF": 0
 		},
 	"\/README.md": {

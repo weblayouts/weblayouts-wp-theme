@@ -1,1 +1,0 @@
-!function($){console.log("????");var a=$(".main-sidebar");$("body").on("click","#btn-hamburger",function(){$("body").addClass("main-sidebar-active"),a.attr("aria-hidden","false")}),$("body").on("click","#btn-close",function(){$("body").removeClass("main-sidebar-active"),a.attr("aria-hidden","true")})}(jQuery);

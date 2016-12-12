@@ -47,7 +47,7 @@ Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/Optimiz
 
 
 # JavaScript resources (By order of delivery)
-Complete processing (validation, minification, ...) done by [Codekit](https://codekitapp.com/) 
+1.  
 
 
 

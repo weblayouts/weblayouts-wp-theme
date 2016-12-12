@@ -47,7 +47,7 @@ Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/Optimiz
 
 
 # JavaScript resources (By order of delivery)
-1.  
+1. wl-main-min.js (renamed "weblayouts.js" in codekit
 
 
 

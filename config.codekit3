@@ -11,21 +11,21 @@
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.gitignore",
-		"oF": 0
+		"oA": 1,
+		"oAP": "\/.gitignore.",
+		"oF": 1
 		},
 	"\/404.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/404.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/archive.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/archive.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/assets\/js\/customizer.js": {
 		"ft": 64,
@@ -103,7 +103,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/wl-main-min.js",
+		"oAP": "\/js\/wl-main-min.js",
 		"oF": 2,
 		"sC": 1,
 		"tS": 1
@@ -962,9 +962,9 @@
 		},
 	"\/comments.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/comments.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/components\/features\/featured-content\/content-featured.php": {
 		"ft": 8192,
@@ -1174,21 +1174,21 @@
 		},
 	"\/footer.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/footer.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/functions.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/functions.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/header.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/header.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/img\/7-Friends.jpg": {
 		"ft": 16384,
@@ -1204,7 +1204,7 @@
 		"oA": 0,
 		"oAP": "\/img\/sprite.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,
@@ -1274,9 +1274,9 @@
 		},
 	"\/index.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/index.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/js\/loadCSS-min.js": {
 		"ft": 64,
@@ -1332,6 +1332,15 @@
 		"oAP": "\/js\/wl-document-min.js.map",
 		"oF": 0
 		},
+	"\/js\/wl-main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/wl-main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/wl-styles-async-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1367,21 +1376,15 @@
 		},
 	"\/LICENSE": {
 		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/LICENSE",
-		"oF": 0
+		"oA": 1,
+		"oAP": "\/LICENSE.",
+		"oF": 1
 		},
 	"\/page.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/page.php",
-		"oF": 0
-		},
-	"\/README.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/README.html",
-		"oF": 0
+		"oF": 1
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -1394,7 +1397,7 @@
 		"oA": 0,
 		"oAP": "\/README.html",
 		"oF": 0,
-		"oFM": 0,
+		"oFM": 9,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,
@@ -1403,18 +1406,18 @@
 		},
 	"\/readme.txt": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/readme.txt",
-		"oF": 0
+		"oF": 1
 		},
 	"\/rtl.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/rtl-ck.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/screenshot.png": {
@@ -1423,77 +1426,77 @@
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/search.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/search.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/searchform.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/searchform.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/sidebar-archivestags.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/sidebar-archivestags.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/sidebar-featured.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/sidebar-featured.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/sidebar-singlepage.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/sidebar-singlepage.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/sidebar-singlepost.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/sidebar-singlepost.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/sidebar.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/sidebar.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/single.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/single.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/style.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/style-ck.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/template-heroslider-posts.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/template-heroslider-posts.php",
-		"oF": 0
+		"oF": 1
 		},
 	"\/template-sidebar-image.php": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/template-sidebar-image.php",
-		"oF": 0
+		"oF": 1
 		}
 	},
 "hooks": [

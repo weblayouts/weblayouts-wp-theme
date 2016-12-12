@@ -1,56 +1,58 @@
-<!DOCTYPE html>
-<html>
+# weblayouts-wp-theme
+Wordpress theme of weblayouts.ca with full documentation
+ 
+
+
+
+
+# JavaScript &amp; SCSS files processing:
+Complete processing (validation, minification, ...) done by [Codekit](https://codekitapp.com/) 
+
+
+
+
+# Stylesheet resources (By order of delivery)
+Stylesheet assets are located into : `assets/stylesheets`.
+
+
+1. **Critical stylesheet** : Must load before the rest of the page (for decent look). Very light and render blocking is very short. Included at the end of the `<head>` (as advised by [PageSpeed Tools's 
+Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery)).
+
+```html
 <head>
-	<meta charset="utf-8"/>
+	...
+	... 
+	<style>
+		@import '<?php echo get_stylesheet_directory_uri(); ?>/css/style-critical.css';
+	</style>
 </head>
-<body>
-<h1 id="weblayouts-wp-theme">weblayouts-wp-theme</h1>
+```
 
-<p>Wordpress theme of weblayouts.ca with full documentation</p>
-
-<h1 id="javascriptampscssfilesprocessing:">JavaScript &amp; SCSS files processing:</h1>
-
-<p>Complete processing (validation, minification, &#8230;) done by <a href="https://codekitapp.com/">Codekit</a> </p>
-
-<h1 id="stylesheetresourcesbyorderofdelivery">Stylesheet resources (By order of delivery)</h1>
-
-<p>Stylesheet assets are located into : <code>assets/stylesheets</code>.</p>
-
-<ol>
-<li><strong>Critical stylesheet</strong> : Must load before the rest of the page (for decent look). Very light and render blocking is very short. Included at the end of the <code>&lt;head&gt;</code> (as advised by <a href="https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery">PageSpeed Tools&#8217;s
-Optimize CSS Delivery</a>).</li>
-</ol>
-
-<pre><code class="html">&lt;head&gt;
-    ...
-    ... 
-    &lt;style&gt;
-        @import '&lt;?php echo get_stylesheet_directory_uri(); ?&gt;/css/style-critical.css';
-    &lt;/style&gt;
-&lt;/head&gt;
-</code></pre>
-
-<ol>
-<li><strong>Non-critical stylesheets</strong> : The site&#8217;s remaining styles (loaded asynchronously via <a href="https://gist.github.com/schilke/02357d9263ed28fc1769">loadCSS</a> )
+2. **Non-critical stylesheets** : The site's remaining styles (loaded asynchronously via [loadCSS](https://gist.github.com/schilke/02357d9263ed28fc1769) )
 2.1. style-non-critical.css (main styles)
 2.2. font-awesome (4.6.3)
 2.3. google-fonts (Lato:400,700,900)
-2.4. <strong>Plugin stylesheets</strong>
+2.4. **Plugin stylesheets**
 2.5. admin.css (browser caching)
-2.6. styles.css (contact-form&#8211;7)
+2.6. styles.css (contact-form-7)
 2.7. pagenavi-css (wp-pagenavi)
 2.8. style.min.css (social-warfare)
 2.9. prism.css (prism-wp)
 2.10. prism-line-highlight.css (prism-wp)
 2.11. prism-line-numbers.css (prism-wp)
-2.12. jetpack.css (jetpack)</li>
-</ol>
+2.12. jetpack.css (jetpack)
+ 
 
-<h1 id="javascriptresourcesbyorderofdelivery">JavaScript resources (By order of delivery)</h1>
 
-<ol>
-<li>wl-main-min.js (renamed &#8220;weblayouts.js&#8221; in codekit</li>
-</ol>
 
-</body>
-</html>
+
+# JavaScript resources (By order of delivery)
+1. wl-main-min.js (renamed "weblayouts.js" in codekit
+
+
+
+
+
+
+
+

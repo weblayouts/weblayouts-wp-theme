@@ -23,7 +23,7 @@
 </style>
 </head>
 
-<body <?php body_class(); ?> data-resouces-version="<?php echo $GLOBALS['resouces-version']; ?>">
+<body <?php body_class(); ?> data-resouces-version="<?php echo $GLOBALS['resouces-version']; ?>" data-template-dir-uri="<?php echo get_template_directory_uri(); ?>">
 <a class="skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'web_layouts' ); ?></a>
 <div id="page" class="site">
 

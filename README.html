@@ -8,12 +8,16 @@
 
 <p>Wordpress theme of weblayouts.ca with full documentation</p>
 
+<h1 id="javascriptampscssfilesprocessing:">JavaScript &amp; SCSS files processing:</h1>
+
+<p>Complete processing (validation, minification, &#8230;) done by <a href="https://codekitapp.com/">Codekit</a> </p>
+
 <h1 id="stylesheetresourcesbyorderofdelivery">Stylesheet resources (By order of delivery)</h1>
 
 <p>Stylesheet assets are located into : <code>assets/stylesheets</code>.</p>
 
 <ol>
-<li><strong>Critical stylesheet</strong> : Stylesheet that absolutely must load before the rest of the page. Contains light styles just to give the whole layout a decent shape. Included at the end of the <code>&lt;head&gt;</code> (as advised by <a href="https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery">PageSpeed Tools&#8217;s
+<li><strong>Critical stylesheet</strong> : Must load before the rest of the page (for decent look). Very light and render blocking is very short. Included at the end of the <code>&lt;head&gt;</code> (as advised by <a href="https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery">PageSpeed Tools&#8217;s
 Optimize CSS Delivery</a>).</li>
 </ol>
 
@@ -27,10 +31,22 @@ Optimize CSS Delivery</a>).</li>
 </code></pre>
 
 <ol>
-<li><strong>Non-critical stylesheet</strong> : Contains the site&#8217;s complete styles (loaded asynchronously via <a href="https://gist.github.com/schilke/02357d9263ed28fc1769">loadCSS</a> )</li>
+<li><strong>Non-critical stylesheets</strong> : The site&#8217;s remaining styles (loaded asynchronously via <a href="https://gist.github.com/schilke/02357d9263ed28fc1769">loadCSS</a> )
+2.1. style-non-critical.css (main styles)
+2.2. font-awesome (4.6.3)
+2.3. google-fonts (Lato:400,700,900)
+2.4. <strong>Plugin stylesheets</strong>
+2.5. admin.css (browser caching)
+2.6. styles.css (contact-form&#8211;7)
+2.7. pagenavi-css (wp-pagenavi)
+2.8. style.min.css (social-warfare)
+2.9. prism.css (prism-wp)
+2.10. prism-line-highlight.css (prism-wp)
+2.11. prism-line-numbers.css (prism-wp)
+2.12. jetpack.css (jetpack)</li>
 </ol>
 
-<h1 id="javascriptampscssfilesprocessing:">JavaScript &amp; SCSS files processing:</h1>
+<h1 id="javascriptresourcesbyorderofdelivery">JavaScript resources (By order of delivery)</h1>
 
 <p>Complete processing (validation, minification, &#8230;) done by <a href="https://codekitapp.com/">Codekit</a> </p>
 

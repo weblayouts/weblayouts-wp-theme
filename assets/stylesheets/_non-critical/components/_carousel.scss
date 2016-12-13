@@ -1,9 +1,43 @@
 
 /**
- * ".carousel"
+ * INFORCE "FADE" EFFECT ON BOOTSTRAP CAROUSEL
  * ....
 */
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
 .carousel{ 
+	$heigh-controls: 100px;
 	.entry-title, .entry-meta{
 		position: relative; 
 		//Make sure slide content is above
@@ -23,6 +57,11 @@
 	.post-thumbnail{
 		position: relative; 
 	} 
+
+	.carousel-control{
+		top: calc(50% - #{$heigh-controls}/2);
+		height: $heigh-controls;
+	}
 }
 .carousel-indicators{
 	$frame-width: 600px;

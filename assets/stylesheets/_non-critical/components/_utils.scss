@@ -2,10 +2,12 @@
 
 .list-pills{
 	a{
-		text-decoration: none;
-		border-radius: 30px;
 		padding: 5px 20px;
 	}
+}
+.list-pills a, .btn-round{
+	text-decoration: none;
+	border-radius: 30px;
 }
 .pills-yaounde-style{
 	a{

@@ -59,6 +59,7 @@
 }
 
 a.label.alert{
+	background-color: $color__link;
 	&:hover{
 		background-color: darken($color__link, 0.5);
 		color: #fff;

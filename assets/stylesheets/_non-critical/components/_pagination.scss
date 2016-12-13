@@ -8,7 +8,7 @@
 		display: none;
 	}
 	a, .current{
-		padding: 6px 10px;
+		padding: 6px 10px!important;
 		border-width: 0!important;
 		&:hover{
 			color: $color__background-body;

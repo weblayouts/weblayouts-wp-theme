@@ -16,7 +16,7 @@
 .page-hero{
     position: relative; 
     overflow-y: hidden;
-    $slide-height: 220px;
+    $slide-height: 260px;
     height: $slide-height;
 
     // .carousel-inner,
@@ -58,6 +58,10 @@
         display: inline-block;
         margin-bottom: 15px;
     } 
+
+    .carousel-inner{
+        min-height: $slide-height;
+    }
 
     @media only screen and (max-width: 47.999em){//768px
     	.item-cat, .item-excerpt p { 

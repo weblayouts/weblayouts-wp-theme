@@ -9,7 +9,7 @@
 
  
 
-$GLOBALS['resouces-version'] = '0.4.4';
+$GLOBALS['resouces-version'] = '0.4.5';
 
 
 
@@ -242,6 +242,8 @@ function web_layouts_scripts() {
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/wl-main-min.js', array('jquery'), $GLOBALS['resouces-version'], true );
 	//JavaScript/masonry ...
 	wp_enqueue_script( 'masonry.pkgd', 'https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.1/masonry.pkgd.min.js', array(), $GLOBALS['resouces-version'], true );
+
+	wp_enqueue_script( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js', array(), $GLOBALS['resouces-version'], true );
 	//JavaScript/document ...
 	wp_enqueue_script( 'wl-document', get_template_directory_uri() . '/js/wl-document-min.js', array('loadCSS'), $GLOBALS['resouces-version'], true );
 	//JavaScript/home-page ...

@@ -32,3 +32,20 @@
 		}
 	}
 }
+.entry-title{
+    line-height: 1.3em;	
+}
+.entry-title a{
+    text-decoration: none;
+}
+.entry-title a:hover{
+    text-decoration: underline;
+}
+
+
+.list--catfilter{
+	font-size: 0.9em;
+	li{
+		margin-right: 10px;
+	}
+}

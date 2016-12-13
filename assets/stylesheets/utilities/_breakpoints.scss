@@ -1,0 +1,12 @@
+
+//A list of named breakpoints
+$breakpoints: (
+	small : 0,
+	mediaum : 1px,
+	large: 2px,
+	xlarge: 3px,
+	xxlarge: 4px
+) !default;
+
+
+$tablet-width: 768px;

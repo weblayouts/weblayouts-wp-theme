@@ -1,26 +1,23 @@
+/**
+ * File structure inspired from:
+ * https://github.com/zurb/foundation-sites/tree/develop/scss
+*/
 
 // --------------------------------------------------------------
 // >>> TABLE OF CONTENTS:
 // ----------------------------------------------------------------
 
 
-// -------- MIXINS -------------
-@import 'utilities/mixins/mixins-base';
-
-// -------- VARIABLES -------------
+// -------- UTILITIES -------------
+@import 'utilities/breakpoints'; 
+@import 'utilities/mixins/mixins-base'; 
 @import 'utilities/variables/variables-base';
 @import 'utilities/utils';  
 
 // -------- VENDORS ------------- 
-@import '_non-critical/vendors/foundation.6.2.4';
-@import '_non-critical/vendors/bootstrap/carousel';
+@import 'vendors/foundation.6.2.4';
+@import 'vendors/bootstrap-carousel';
 
-// -------- SHARED -------------
-@import '_non-critical/shared/accessibility';  
- 
-// -------- OVERRIDES -------------
-@import '_non-critical/overrides/foundation';
-    
 // -------- TYPOGRAPHY -------------
 @import '_non-critical/typography/body';
 @import '_non-critical/typography/site-header';
@@ -34,9 +31,10 @@
 @import '_non-critical/scaffolding/main-sidebar';
 @import '_non-critical/scaffolding/site-header'; 
 
-// -------- PAGES ------------- 
-@import '_non-critical/pages/home';
-@import '_non-critical/pages/all-pages';
+// -------- SPECIFIC TO APPLICATION ------------- 
+@import '_non-critical/_app-specifics/foundation';
+@import '_non-critical/_app-specifics/home';
+@import '_non-critical/_app-specifics/all-pages';
 
 // -------- COMPONENTS ------------- 
 @import '_non-critical/components/page-hero'; 
@@ -49,14 +47,14 @@
 @import '_non-critical/components/mixed-components';
 @import '_non-critical/components/focus-on-components';
 @import '_non-critical/components/jetpack_subscription_widget';
-@import '_non-critical/components/_codepen_embed_iframe';
+@import '_non-critical/components/codepen_embed_iframe';
+@import '_non-critical/components/visibility';
+// @import 'buttons';
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@import '_non-critical/shared/forms'; 
-
-// -------- STATE -------------  
+@import '_non-critical/forms/forms'; 
 
  
 

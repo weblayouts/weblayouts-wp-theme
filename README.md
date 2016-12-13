@@ -28,17 +28,38 @@ Optimize CSS Delivery](https://developers.google.com/speed/docs/insights/Optimiz
 </head>
 ```
 
-2. **Non-critical stylesheets** : The site's remaining styles (loaded asynchronously via [loadCSS](https://gist.github.com/schilke/02357d9263ed28fc1769) )
-2.1. style-non-critical.css (main styles)
-2.2. font-awesome (4.6.3)
-2.3. google-fonts (Lato:400,700,900)
-2.4. **Plugin stylesheets**
-2.5. admin.css (browser caching)
-2.6. styles.css (contact-form-7)
-2.7. pagenavi-css (wp-pagenavi)
-2.8. style.min.css (social-warfare)
-2.9. prism.css (prism-wp)
-2.10. prism-line-highlight.css (prism-wp)
-2.11. prism-line-numbers.css (prism-wp)
-2.12. jetpack.css (jetpack)
+<ol>
+	<li>**Non-critical stylesheets** : The site's remaining styles (loaded asynchronously via [loadCSS](https://gist.github.com/schilke/02357d9263ed28fc1769) )</li>
+	<ol>
+		<li>style-non-critical.css (main styles)</li>
+		<li>font-awesome (4.6.3)</li>
+		<li>google-fonts (Lato:400,700,900)</li>
+		<li>**Plugin stylesheets**</li>
+		<li>admin.css (browser caching)</li>
+		<li>styles.css (contact-form-7)</li>
+		<li>pagenavi-css (wp-pagenavi)</li>
+		<li>style.min.css (social-warfare)</li>
+		<li>prism.css (prism-wp)</li>
+		<li>prism-line-highlight.css (prisΩm-wp)</li>
+		<li>prism-line-numbers.css (prism-wp)</li>
+		<li>jetpack.css (jetpack)</li>
+	</ol>
+</ol>
  
+
+
+
+
+# JavaScript resources (By order of delivery) 
+1. wl-main-min.js (renamed "weblayouts.js" in codekit
+
+2. wl-document-min.js (depends on "loadCSS-min.js")
+
+3. page-home-min.js (depends on "wl-document-min.js")
+
+
+
+
+
+
+

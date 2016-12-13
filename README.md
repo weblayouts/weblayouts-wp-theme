@@ -9,3 +9,7 @@ Wordpress theme of weblayouts.ca with full documentation
 Complete processing (validation, minification, ...) done by [Codekit](https://codekitapp.com/) 
 
 
+
+
+# Stylesheet resources (By order of delivery)
+Stylesheet assets are located into : `assets/stylesheets`.

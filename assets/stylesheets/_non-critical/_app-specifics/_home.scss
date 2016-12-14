@@ -3,11 +3,12 @@
 .home,
 .search{
 	.content-latest-articles{  
-		@media screen and (max-width: 63.999em){ 
-			.post-sample:nth-last-of-type(1){
+		.post-sample-frame{
+			margin-bottom: 50px;
+			.post-sample{
 				margin-bottom: 0;
 			}
-		}  
+		} 
 	}
 	.wp-pagenavi{
 		padding-top: 50px;    
@@ -18,18 +19,12 @@
 	}
 
 
-	@media only screen and (max-width: 48.000em){//768px
+	@include small-only {
 		.site-main, .widget-area, 
 		.post-sample {
 			width: 100%;
 		}
 	}
-	
-	@media only screen and (max-width: 74.999em){//1200px
-		.post-sample {
-			width: 100%;
-		}
-	} 
 }
 
 
@@ -43,7 +38,7 @@
      	margin-bottom: 0;
   	}
 	.page-hero{
-		@media only screen and (max-width: 61.999em){
+		@include no-bigger-than-medium {
 			margin-bottom: 30px;
 		} 
 	}
@@ -53,7 +48,7 @@
 	    justify-content: center;
 	    flex-wrap: wrap;
 	    li{ 
-			@media only screen and (max-width: 61.999em){
+			@include no-bigger-than-medium {
 				margin: 10px;
 			} 
 		}

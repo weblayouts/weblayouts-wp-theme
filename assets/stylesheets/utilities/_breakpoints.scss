@@ -1,12 +1,67 @@
 
-//A list of named breakpoints
-$breakpoints: (
-	small : 0,
-	mediaum : 1px,
-	large: 2px,
-	xlarge: 3px,
-	xxlarge: 4px
-) !default;
+// //Map of breakpoints
+// $breakpoints: (
+// 	small : 0,
+// 	mediaum : 1px,
+// 	large: 2px,
+// 	xlarge: 3px,
+// 	xxlarge: 4px
+// ) !default;
 
+$medium-low 	: 40em; //640px
+$medium-width 	: 40.063em; //641px
+$large-low-width 	: 64em; //1024px (I used 62em)
+$large-width 		: 64.063em; //1025px
+$a-little-larger 	: 74.999em;
+$xlarge-low-width 	: 90em; //1440px
+$xlarge-width 	: 90.063em; //1441px
+$tablet-width	: 768px;
+$desktop-width	: 1024px;
 
-$tablet-width: 768px;
+@mixin small-only {
+	@media only (max-width: #{$medium-low}){
+		@content;
+	}
+}
+
+@mixin medium {
+	@media only (min-width: #{$medium-width}){
+		@content;
+	}
+}
+
+@mixin medium-only {
+	@media only (min-width: #{$medium-width}) and (max-width: #{$large-low-width}){
+		@content;
+	}
+}
+
+@mixin large {
+	@media only (min-width: #{$large-width}){
+		@content;
+	}
+}
+
+@mixin no-bigger-than-medium {
+	@media only (max-width: #{$large-low-width}){
+		@content;
+	}
+}
+
+@mixin large-only {
+	@media only (min-width: #{$large-width}) and (max-width: #{$xlarge-low-width}){
+		@content;
+	}
+}
+
+@mixin a-little-larger {
+	@media only (min-width: #{$a-little-larger}){
+		@content;
+	}
+}
+
+@mixin xlarge {
+	@media only (min-width: #{$xlarge-width}){
+		@content;
+	}
+}

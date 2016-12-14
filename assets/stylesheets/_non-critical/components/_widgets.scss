@@ -87,7 +87,7 @@
     li{
         margin-bottom: 20px;
     }
-    @media screen and (min-width: 40em){
+    @include medium {
         column-count: 3;
         column-gap: 30px;
         li{
@@ -149,15 +149,14 @@
     }
     > p{
         > label{
-            /* max-width 640px, mobile-only styles */
-            @media only screen and (max-width: 40em) {
+            @include small-only {
                 flex-direction: column;
                 span{
                     flex: 1;
                 }
             } 
             // Medium screens
-            @media only screen and (min-width: 40.063em) { 
+            @include medium { 
                 display: flex;
                 span:first-child{
                     flex: 0.4;

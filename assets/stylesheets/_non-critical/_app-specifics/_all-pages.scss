@@ -15,7 +15,7 @@
 
 .single{
 	.post-meta{
-		@media screen and (max-width: 61.875em){
+		@include no-bigger-than-medium {
 			.pull-left, .pull-right{
 				position: absolute;
 	    		top: -50px; 
@@ -32,7 +32,7 @@
 		margin-bottom: 30px;
 	}
 	.widget-relatedposts{
-		@media screen and (min-width: 40em){
+		@include medium {
 			column-count: 2;
 			column-gap: 30px;
 		}
@@ -62,7 +62,7 @@
 		.taxonomy-description{
 			display: none;
 		}
-        @media only screen and (min-width: 62em){
+        @include large {
             height: 400px;
             .item-content{
             	height: 400px;
@@ -85,12 +85,12 @@
 .page-template-template-sidebar-image, .error404{
 	.content-area{
 		display: flex;
-		@media only screen and (max-width: 47.999em) {
+		@include small-only {
 			.decoration{
 				width: 100%;
 			}
 		}
-		@media only screen and (max-width: 74.999em){//1200px
+		@include no-bigger-than-medium {
 			flex-direction: column-reverse;
 			.site-main {
 				width: 100%;
@@ -100,7 +100,7 @@
 			}
 		}
 
-		@media only screen and (min-width: 48.000em) and (max-width: 74.999em){//768px
+		@include medium-only {
 			.entry-content, .page-content {
 				column-count: 2;
 				column-gap: 40px;
@@ -111,7 +111,7 @@
     			background-position: center -150px!important;
 			}
 		}
-		@media only screen and (min-width: 75.000em){//1200px 
+		@include a-little-larger { 
 			.decoration{
 				margin-right: 15px;
 			}
@@ -120,7 +120,6 @@
 
 
 	.decoration{
-		// background-image: url(https://images.unsplash.com/photo-1453847350175-b971869973d0?ixlib=rb-0.3.5…crop=entropy&cs=tinysrgb&w=1080&fit=max&s=52ef7a5b2be442d10c2c0f67f6bbe1e7);
 		background-size: cover; 
 		background-position: center top;
 	}
@@ -128,57 +127,6 @@
 
 
 
-
-
-
-// //Thank you template
-// .page-template-template-thankyou{
-// 	.contents{
-// 		display: flex;
-// 		@media only screen and (max-width: 48.000em){//768px 
-// 			flex-direction: column;
-// 			.content-message, .content-next{
-// 				width: 100%;
-// 			}
-// 			.content-message{
-// 				margin-bottom: 30px;
-// 			}
-// 		} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
-
-// 		.content-message, .content-next{
-// 			display: flex;
-// 			flex-direction: column;
-// 			min-height: 440px;
-// 			background-size: cover;
-// 		}
-// 	}
-// 	.content-message{
-// 		justify-content: flex-end;
-// 		text-align: center;
-// 		background-image: url('./img/7-Friends.jpg');
-// 		background-repeat: no-repeat;
-// 		.entry-title, p{
-// 			background: rgba(255,255,255,0.9);
-// 		}
-// 		.entry-title{
-//     		margin: 0;
-// 		}
-// 	}	
-// 	.content-next{
-// 		.entry-footer{
-// 			font-size: 1em;
-// 		}
-// 		ul{
-// 			margin-top: 5px; 
-// 			padding-left: 17px;
-// 		}
-// 	}
-// 	.credits{
-//     	@include font-family-serif();   
-//     	text-align: center;
-// 	}
-// }
 
 
 

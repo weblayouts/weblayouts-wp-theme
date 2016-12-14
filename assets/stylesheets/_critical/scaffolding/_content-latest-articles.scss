@@ -1,3 +1,6 @@
+@mixin test {
+	@content;
+}
 .content-latest-articles{
 	$gap : 20px; 
 
@@ -9,14 +12,14 @@
 	    clear: both;
 	}
 
-	.post-sample-frame{ 
-		@media only screen and (min-width: 62em){  
+	.post-sample-frame{  
+		@include large { 
 			float: left;
 			padding-left: $gap;
 			padding-right: $gap;
 			width: percentage(1/2); 
 		}
-		@media only screen and (min-width: 74.999em){ 
+		@include a-little-larger { 
 			width: percentage(1/3); 
 		}
 	}

@@ -9,7 +9,7 @@
 	clear: both;  
  
 	// Medium screens
-	@media only screen and (min-width: 40.063em) { 
+	@include medium { 
 		height: 60px; //looks like IE 11 and < doesn't like "min-height"
 		> ul{
 			&:first-child{
@@ -31,29 +31,7 @@
 	ul {  
 		margin: 0;
 		padding-left: 0;
-		// ul {
-		// 	float: left;
-		// 	position: absolute;
-		// 	top: 1.5em;
-		// 	left: -999em;
-		// 	z-index: 99999;
-
-		// 	a {
-		// 		width: 200px;
-		// 	}
-
-		// 	ul {
-		// 		left: -999em;
-		// 		top: 0;
-		// 	}
-
-		// 	li {
-		// 		&:hover > ul,
-		// 		&.focus > ul {
-		// 			left: 100%;
-		// 		}
-		// 	}
-		// }
+	
 	}
 	
 	li {

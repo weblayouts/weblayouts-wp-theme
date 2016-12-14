@@ -11,7 +11,7 @@
 		align-items: center; //horizontal align
 		
 		//smaller screens
-		@media only screen and (max-width: 61.999em){  
+		@include no-bigger-than-medium {  
 			min-height: 400px;
 			flex-direction: column;
 		}

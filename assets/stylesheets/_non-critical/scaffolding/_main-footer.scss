@@ -10,7 +10,7 @@
 
 	.logo-branding{  
 		//smaller screens
-		@media only screen and (max-width: 61.999em){  
+		@include no-bigger-than-medium {  
 			margin: 0 auto;
 			&.logo-large{
 				display:none;
@@ -26,7 +26,7 @@
 		justify-content: flex-end;
 		font-size: 0.8em;
 		//smaller screens
-		@media only screen and (max-width: 61.999em){  
+		@include no-bigger-than-medium {  
 			justify-content: center;
 		}
 		li{
@@ -48,7 +48,7 @@
 	}
 		
 	//smaller screens
-	@media only screen and (max-width: 61.999em){  
+	@include no-bigger-than-medium {  
 		margin-left: 0.9375rem;
 		margin-right: 0.9375rem;
 		max-width: 350px;
@@ -58,7 +58,7 @@
 	    justify-content: center;
 	}
 	//larger screens
-	@media only screen and (min-width: 62em){  
+	@include large {  
 		height: 100px; 
 	}
 } 

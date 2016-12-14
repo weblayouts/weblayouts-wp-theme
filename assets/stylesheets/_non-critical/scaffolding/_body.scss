@@ -26,7 +26,7 @@ body{
 			background-color: rgba(0,0,0,0.6);
 
 		    //Hide for larger devices ...
-		    @media only screen and (min-width: 62.000em){//992px
+		    @include large {//992px
 		        display: none;
 		    }
 		}

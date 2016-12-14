@@ -5,7 +5,7 @@
     z-index: 20;
 
     > .flex-container{
-    	@media only screen and (min-width: 62em){
+    	@include large {
 	    	height: 200px; 
 		}
     }
@@ -27,7 +27,7 @@
 			width: 150px;
 		}
  
-    	@media only screen and (min-width: 62em){
+    	@include large {
 			&.logo-large{
 				display:block;
 			}
@@ -44,12 +44,12 @@
 	    line-height: 0.7em;
 	    font-size: 1.1em;
 	    //Hide on larger devices ...
-	    @media only screen and (min-width: 62.000em){//992px 
+	    @include large {//992px 
 			display: none; 
 	    }
     }
     //Hide on less than larger devices ...
-    @media only screen and (max-width: 61.999em){//992px
+    @include no-bigger-than-medium {
         .main-navigation{
 			display: none;
 		}
@@ -63,13 +63,13 @@
 
 .logo-branding-large{
 	display: none; 
-	@media only screen and (min-width: 62em){
+	@include large {
 		display: block;
 	}
 }
 .logo-branding-small{
 	display: block;
-	@media only screen and (min-width: 62em){
+	@include large {
 		display: none;
 	}
  

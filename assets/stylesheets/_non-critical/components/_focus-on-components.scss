@@ -2,7 +2,7 @@
 
 //colors ..
 .main-navigation{ 
-	@media only screen and (min-width: 62em){ 
+	@include large { 
 		a{ 
 			&:focus{
 				border-color: #fff; 
@@ -14,7 +14,7 @@
 
 .main-logo, .btn-hamburger{
 	&:focus{
-		@media only screen and (min-width: 62em){ 
+		@include large { 
 			border: 3px solid #fff;
 		} 
 	}

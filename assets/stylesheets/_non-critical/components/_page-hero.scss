@@ -6,22 +6,22 @@
 
     // I'm removing Bootstrap
     // ----------------------
-    // .carousel-control{
-    //     .icon-prev, .icon-next{
-    //         color: $color__link;
-    //         font-size: 40px;
-    //     }
-    //     .icon-prev{
-    //         right: 20px;
-    //         left: initial;
-    //     }
-    //     .icon-next{
-    //         left: 0px;
-    //     }
-    //     @media only screen and (min-width: 62em){
-    //         width: 20%;
-    //     }
-    // }
+    .carousel-control{
+        .icon-prev, .icon-next{
+            color: $color__link;
+            font-size: 40px;
+        }
+        .icon-prev{
+            right: 20px;
+            left: initial;
+        }
+        .icon-next{
+            left: 0px;
+        }
+        @include large {
+            width: 20%;
+        }
+    }
 }
 
 
@@ -48,7 +48,7 @@
     }
     .carousel-indicators{
         bottom: 100px;
-        @media only screen and (max-width: 61.999em){//992px
+        @include no-bigger-than-medium {
             display: none;
         }
     }

@@ -57,7 +57,7 @@
 .entry-meta{
     @include font-family-serif();  
 	//small screens only
-	@media screen and (max-width: 40em) {
+	@include small-only {
 		font-size: 0.85em;
 	}
 	> span{
@@ -79,7 +79,7 @@
 //4) author, date, comments
 .post-sample-column{
 	.entry-content{
-		@media only screen and (min-width: 75.000em){//1200px
+		@include a-little-larger {
 			min-height: 220px;
 		} 	
 	}
@@ -99,12 +99,9 @@
 	display: flex;
 	margin-bottom: 50px;
  
-	@media only screen and (max-width: 74.999em){//1200px
-		// flex-direction: column;
-		.entry-header{
-			margin: 15px 0 10px 0;
-		} 
-	}
+	.entry-header{
+		margin: 15px 0 10px 0;
+	} 
 
 	.entry-title{
 		margin-top: 0;
@@ -117,36 +114,7 @@
 		margin-top: 20px;
 		margin-right: 20px;
 	}
-
-	// .post-thumbnail, .post-datacontent{
-	// 	flex: 1;
-	// }
-	// .post-datacontent{
-	// 	flex: 1;
-	// }
-	// .post-thumbnail {
-	// 	@media only screen and (min-width: 75.000em){//1200px
-	// 		margin-right: 30px;
-	// 	}
-	// }
 }
-
-//Inside the widget area
-// .widget-area{
-// 	.post-sample-row{     
-// 		@media only screen and (max-width: 74.999em){//1200px
-// 			flex-direction: row; 
-// 		} 
-// 		.post-thumbnail{
-// 			flex: 0.3;
-// 			margin-right: 15px;
-// 		}
-
-// 		&:last-of-type{
-// 			border-width: 0;
-// 		} 
-// 	}
-// }
 
 
 

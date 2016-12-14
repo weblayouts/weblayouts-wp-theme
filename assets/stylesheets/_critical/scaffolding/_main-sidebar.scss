@@ -13,8 +13,7 @@
     //hide it for now
     transform: translate(-#{$translate-distance} , 0);
 
-    //Hide for larger devices ...
-    @media only screen and (min-width: 62.000em){//992px
+    @include large {
         display: none;
     }
 }

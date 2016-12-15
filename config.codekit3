@@ -7,7 +7,7 @@
 		"uuidString": "CF6134C8-5049-4D10-AB33-1892B98E146A"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25479",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -196,6 +196,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/stylesheets\/_critical\/scaffolding\/_drawerPanel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/_critical\/css\/_drawerPanel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/stylesheets\/_critical\/scaffolding\/_main-footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -218,19 +231,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/stylesheets\/_critical\/css\/_main-navigation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/stylesheets\/_critical\/scaffolding\/_main-sidebar.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_critical\/css\/_main-sidebar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -495,6 +495,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/stylesheets\/_non-critical\/scaffolding\/_drawerPanel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_drawerPanel.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/stylesheets\/_non-critical\/scaffolding\/_main-footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -517,19 +530,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_main-navigation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/stylesheets\/_non-critical\/scaffolding\/_main-sidebar.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_main-sidebar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1723,6 +1723,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -1886,6 +1890,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
 			},
 		"multiline-ternary": {
 			"active": 0,
@@ -2251,6 +2259,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -2482,6 +2494,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -3315,6 +3331,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {

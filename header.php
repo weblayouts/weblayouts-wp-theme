@@ -27,6 +27,19 @@
 <a class="skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'web_layouts' ); ?></a>
 <div id="page" class="site">
 
+
+
+	<div class="drawerPanel" aria-hidden="true" tabindex="-1">
+		<button id="btn-close" class="btn-close btn-close-sidebar">
+			<span class="screen-reader-text">Hide Sidebar</span>
+		</button> 
+		<?php 
+			dispay_custom_logo('large', 'dark');
+		?>
+		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
+	</div><!-- drawerPanel -->
+	
+
 	<header id="masthead" class="site-header" role="banner"> 
 		<div class="row flex-container y-align-items-center"> 
 			<?php 
@@ -35,17 +48,6 @@
 			?>
 		</div><!-- row -->
 	</header>
-
-
-	<div class="main-sidebar" aria-hidden="true" tabindex="-1">
-		<button id="btn-close" class="btn-close btn-close-sidebar">
-			<span class="screen-reader-text">Hide Sidebar</span>
-		</button> 
-		<?php 
-			dispay_custom_logo('large', 'dark');
-		?>
-		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
-	</div><!-- sidebar-nav -->
 
 
 

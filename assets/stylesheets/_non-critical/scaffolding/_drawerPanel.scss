@@ -2,7 +2,7 @@
 
 
 
-.main-sidebar{ 
+.drawerPanel{ 
     background: #fff; 
 
     .main-logo{
@@ -67,24 +67,28 @@
         display: none;
     }
 }
-.main-sidebar-content{
+.drawerPanel-content{
     display: none;
 }
-.toggled .main-sidebar-content{
+.toggled .drawerPanel-content{
     display: block;
 }
 
+    
 
+   
 
-
-
-.main-sidebar{
+.drawerPanel{
+    li{
+        width: 100%;
+    }
     a{ 
+
         color: $color__text-headings;
         border-width: 0;
         text-decoration: none;
     }
-    .main-sidebar ul li{
+    .drawerPanel ul li{
         line-height: 3em;
         border-bottom: 1px dashed #bbb;
     }
@@ -92,6 +96,12 @@
         color: #222;
         font-weight: 700;
         font-size: 1.2em;
+    }
+
+
+    //(body with this class)
+    .drawerPanel--active &{
+        transform: translate(0,0);
     }
 }
 

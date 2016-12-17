@@ -1,7 +1,37 @@
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	color: $color__link;
-	background-color: $color__background-button;
+// button,
+// input[type="button"],
+// input[type="reset"],
+// input[type="submit"] {
+// 	color: $color__link;
+// 	background-color: $color__background-button;
+// }
+
+
+.button{ 
+	// padding: 5px 20px;
+	text-decoration: none;
+}
+.button{ 
+	padding: 10px 20px;
+}
+.button--small{ 
+	padding: 5px 20px; 
+}
+.button--round{
+	border-radius: 30px;
+}
+//red like the city of yaounde's ground
+.button--yde{
+	color: #fff;
+	background-color: $color__link;
+	border: 3px solid $color__link;
+	&:hover{
+		background-color: #fff;
+	}
+	&:focus{
+		//Add a "pulse" animation effect
+		//(TRY THIS FOR ALL BUTTONS AND LINKS)
+		border: 3px dashed $color__link;
+		background-color: lighten($color__link, 40);
+	}
 }

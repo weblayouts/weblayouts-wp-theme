@@ -3,9 +3,9 @@
 .home,
 .search{
 	.content-latest-articles{  
-		.post-sample-frame{
+		.card-frame{
 			margin-bottom: 50px;
-			.post-sample{
+			.card{
 				margin-bottom: 0;
 			}
 		} 
@@ -14,14 +14,14 @@
 		padding-top: 50px;    
 	}
 
-	.post-sample .wp-post-image {
+	.card .wp-post-image {
 		width: 100%;
 	}
 
 
 	@include small-only {
 		.site-main, .widget-area, 
-		.post-sample {
+		.card {
 			width: 100%;
 		}
 	}

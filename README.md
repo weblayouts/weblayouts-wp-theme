@@ -1,5 +1,10 @@
 # weblayouts-wp-theme
 Wordpress theme of weblayouts.ca with full documentation
+
+
+
+#Note of development methodology:
+This theme's CSS architecture follows [CSS Guidelines](http://cssguidelin.es/) and [BEM](http://getbem.com/) methodologies.
  
 
 

@@ -1,6 +1,12 @@
 /**
+ * CONTENTS
+ * --------
+ *
  * File structure inspired from:
  * https://github.com/zurb/foundation-sites/tree/develop/scss
+ * Architectures inspired from:
+ * http://cssguidelin.es/
+ * http://getbem.com/
 */
 
 // --------------------------------------------------------------
@@ -39,7 +45,7 @@
 // -------- COMPONENTS ------------- 
 @import '_non-critical/components/page-hero'; 
 @import '_non-critical/components/pagination';
-@import '_non-critical/components/carousel';
+// @import '_non-critical/components/carousel';
 @import '_non-critical/components/list-pills';
 @import '_non-critical/components/post-sample';
 @import '_non-critical/components/posts';
@@ -49,7 +55,7 @@
 @import '_non-critical/components/jetpack_subscription_widget';
 @import '_non-critical/components/codepen_embed_iframe';
 @import '_non-critical/components/visibility';
-// @import 'buttons';
+@import '_non-critical/components/buttons';
 
 /*--------------------------------------------------------------
 # Forms

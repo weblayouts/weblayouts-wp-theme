@@ -22,7 +22,7 @@ get_header(); ?>
 						array( 
 							'theme_location' 	=> 'menu-4', 
 							'menu_id' 			=> 'list--catfilter', 
-							'menu_class'		=> 'menu list--catfilter text-uppercase list-unstyled list-inline list-pills pills-red', 
+							'menu_class'		=> 'menu list--catfilter text-uppercase list-unstyled list-inline', 
 							'container'			=> false,
 							'walker' 			=> new Walker_menu_cat_filter() 
 						) 

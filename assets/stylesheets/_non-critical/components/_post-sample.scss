@@ -1,12 +1,12 @@
 
 /**
- * ".post-sample-column"
+ * ".card-column"
  * Different arrangement of sample of post displayed in loops
 */
 
 
 
-.post-sample{ 
+.card{ 
 	margin-bottom: 50px;
 	background-color: #fff;
 	box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.15);
@@ -71,13 +71,13 @@
 
 
 
-//.post-sample-column
+//.card-column
 //Components arrangements are:
 //1) thumbnail
 //2) title
 //3) text excerpt
 //4) author, date, comments
-.post-sample-column{
+.card-column{
 	.entry-content{
 		@include a-little-larger {
 			min-height: 220px;
@@ -88,14 +88,14 @@
 
 
 
-//.post-sample-row
+//.card-row
 //Components arrangements are:
 //1) thumbnail and "text block" in 1 row
 //-> within "text block":
 //-> 2) title
 //-> 3) text excerpt
 //-> 4) author, date, comments
-.post-sample-row{ 
+.card-row{ 
 	display: flex;
 	margin-bottom: 50px;
  

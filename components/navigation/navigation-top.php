@@ -4,7 +4,7 @@
 			array( 
 				'theme_location' 	=> 'menu-1', 
 				'menu_id' 			=> 'top-pages-menu', 
-				'menu_class' 		=> 'menu top-pages-menu list-unstyled list-pills pills-red pills-douala-style', 
+				'menu_class' 		=> 'menu top-pages-menu list-unstyled', 
 				'container' 		=> false 
 			) 
 		);

@@ -41,7 +41,7 @@
         function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) { 
             if( $args->menu->name == 'Menu of Categories' ){
                 $cat_filter = str_replace(' ', '-', strtolower ( $item->title )); 
-                $output .= sprintf( "\n<li><a data-filter='category-%s' href='%s' class='cat-filter %s'>%s</a></li>\n",
+                $output .= sprintf( "\n<li><a data-filter='category-%s' href='%s' class='button button--small button--round button--yde cat-filter %s'>%s</a></li>\n",
                     $cat_filter,
                     $item->url,
                     ( strtolower($item->title) === 'all' ) ? 'current' : '',

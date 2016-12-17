@@ -17,6 +17,21 @@
 	}
 
 }
+
+.page-hero__label{
+  display: inline-block;
+  margin-bottom: 15px;
+  @include small-only { 
+    display: none;  
+  }
+} 
+.page-hero__excerpt{
+  @include small-only {
+  	p { 
+      display: none; 
+    } 
+  }
+}
 .page-hero{
     position: relative; 
     overflow-y: hidden;
@@ -37,7 +52,7 @@
         align-items: center;
         justify-content: center; 
     }
-    .item-excerpt{ 
+    .page-hero__excerpt{ 
         position: relative; 
         width: 70%; 
         max-width:600px;  
@@ -58,20 +73,11 @@
     .item-cta{ 
         font-size: 0.85em;
     }
-    .item-cat{
-        display: inline-block;
-        margin-bottom: 15px;
-    } 
 
     .carousel-inner{
         min-height: $slide-height;
     }
 
-    @include small-only {
-    	.item-cat, .item-excerpt p { 
-            display: none; 
-        } 
-    }
 
     @include medium {
         &.page-hero-full-screen{

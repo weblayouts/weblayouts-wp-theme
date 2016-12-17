@@ -1,4 +1,4 @@
-<div class="item-excerpt">
+<div class="page-hero__excerpt">
 
 
 
@@ -6,11 +6,11 @@
 		//...............
 		if(is_home()){
 	?> 
-		<a href="<?php echo $GLOBALS['cat_permalink']; ?>" class="item-cat btn-round alert label label-big text-uppercase">
+		<a href="<?php echo $GLOBALS['cat_permalink']; ?>" class="page-hero__label button--round alert label label-big text-uppercase">
 			<?php echo $GLOBALS['cat_name']; ?>
 		</a>
 		<?php 
-			the_title( '<h1 class="entry-title item-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+			the_title( '<h1 class="page-hero__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			the_excerpt();
 			$access_title = esc_html__( 'Read more about : '.get_the_title(), 'web_layouts' );
 		?>
@@ -41,7 +41,7 @@
 			$cattt = get_the_category( get_the_ID() );
 			$cattt_link = get_category_link( $cattt[0]->cat_ID ); 
 		?>
-		<a href="<?php echo $cattt_link; ?>" class="item-cat btn-round alert label label-big text-uppercase">
+		<a href="<?php echo $cattt_link; ?>" class="page-hero__label button--round alert label label-big text-uppercase">
 			<?php echo $cattt[0]->cat_name; ?>
 		</a> 
 		<?php

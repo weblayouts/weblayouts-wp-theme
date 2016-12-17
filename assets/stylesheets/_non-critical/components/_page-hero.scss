@@ -33,16 +33,6 @@
 .page-hero{ 
     $slide-height: 220px;
  
-    .item-excerpt{  
-        color: #fff;
-        .item-title{
-            color: #fff;
-            a{ 
-                color: #fff;
-            }
-            margin-top: 0; 
-        }
-    }
     .item-cta{
         color: $color__link;
         text-decoration: underline;
@@ -57,3 +47,15 @@
         }
     }
 }
+.page-hero__excerpt{  
+    color: #fff;
+}
+.page-hero__title{
+  color: #fff;
+  a{ 
+      color: #fff;
+  }
+  margin-top: 0;
+}
+
+

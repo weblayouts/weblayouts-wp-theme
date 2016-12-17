@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('card card--row large-12 columns'); ?> >
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
-		<div class="post-thumbnail">
+		<div class="card__thumbnail card--row__thumbnail">
 			<?php 
 				$access_title = esc_html__( 'Read more about : '.get_the_title(), 'web_layouts' );
 			?>
@@ -21,22 +21,20 @@
 		</div>
 	<?php endif; ?>
 
-	<article class="post-datacontent"> 
-		<div class="entry-content">
-			<header class="entry-header">
-				<?php
-					if ( is_single() ) {
-						the_title( '<h1 class="entry-title">', '</h1>' );
-					} else {
-						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-					} 
-				?>
-			</header>
+	<article class="card--row__data-content"> 
+		<div class="card__content card--row__content entry-content"> 
+			<?php
+				if ( is_single() ) {
+					the_title( '<h1 class="card__title card--row__title entry-title">', '</h1>' );
+				} else {
+					the_title( '<h2 class="card__title card--row__title entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+				} 
+			?> 
 			<?php 
 				the_excerpt();
 			?>
 		</div>
-		<footer class="entry-footer">
+		<footer class="card__footer card--row__footer entry-footer">
 			<?php if ( 'post' === get_post_type() ) : ?>
 			<?php get_template_part( 'components/post/content', 'meta' ); ?>
 			<?php

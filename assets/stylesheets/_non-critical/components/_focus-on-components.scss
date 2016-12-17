@@ -40,8 +40,7 @@
 
 .main-navigation a{
 	&:focus{
-		color: $color__link;
-		text-decoration: none;
+		color: $color__link; 
 	} 
 }
 
@@ -49,14 +48,12 @@
 .main-footer .main-navigation a, .main-footer p a{
 	&:focus{
 		background-color: $color__link;
-		color: #fff;
-		text-decoration: none;
+		color: #fff; 
 	}
 }
 
 .footer-copyright .list-inline a{
-	&:focus{
-		text-decoration: none;
+	&:focus{ 
 		.fa{
 			color: $color__link;
 		}

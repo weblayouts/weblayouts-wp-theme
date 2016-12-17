@@ -12,39 +12,30 @@
 .card{ 
 	margin-bottom: 50px;
 	background-color: #fff;
-	box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.15);
-
-	//Hide automatic social buttons
-	//generate by "social warfare" plugin
-	.nc_socialPanel{
-		display:none;
-	}
+	box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.15); 
 	p{ 
 		color: $color__background-hr;
 	}//$color__text-input
-	.entry-content{
-		padding: 2em;
-	}
-	.entry-title{
-		margin-top: 0;
-	}
-
-	.post-thumbnail{
-		position: relative;
-		.label{
-			position: absolute;
-		    top: 30px;
-		    left: 30px;
-		}
-	}
-
-	
-	.entry-footer{
-		padding: 0;
-		color: $color__text-input;
-	}
 }
 
+.card__content{
+	padding: 2em;
+}
+.card__title{
+	margin-top: 0;
+}
+.card__thumbnail{
+	position: relative;
+	.label{
+		position: absolute;
+	    top: 30px;
+	    left: 30px;
+	}
+}
+.card__footer{
+	padding: 0;
+	color: $color__text-input;
+}
 
 
 
@@ -74,22 +65,43 @@
 //-> 4) author, date, comments
 .card--row{ 
 	display: flex;
-	margin-bottom: 50px;
+	margin-bottom: 50px; 
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
  
-	.entry-header{
-		margin: 15px 0 10px 0;
-	} 
 
-	.entry-title{
-		margin-top: 0;
-	}
-	.entry-content, .entry-footer{
-		margin: 15px;
-    	padding: 0;
-	}
-	.post-thumbnail{
-		margin-top: 20px;
-		margin-right: 20px;
+.card--row__content, 
+.card--row__footer{ 
+  	padding: 0;
+}
+
+.card--row__data-content{
+	margin-left: 15px; 
+} 
+.card--row__footer{
+	margin-top: 15px; 
+	padding-top: 0;
+}
+.card--row__title{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.card--row__thumbnail{ 
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+.card{   
+	//Hide automatic social buttons
+	//generate by "social warfare" plugin
+	.nc_socialPanel{
+		display:none;
 	}
 }
 

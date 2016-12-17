@@ -1,38 +1,36 @@
 /*------------------------------------*\
-  #PAGE-HERO
+  #hero
 \*------------------------------------*/
 
-.page-hero{ 
+.hero{ 
 	margin-bottom: 80px;
-
-	.btn-push-down{
-		$dim: 32px;
-		position: absolute;
-	    bottom: 30px;
-	    margin-left: 50%;
-        left: -($dim/2);
-	    width: $dim;
-	    height: $dim;
-	    z-index: 30; 
-	}
-
+}
+.hero__btn-scroll-down{
+	$dim: 32px;
+	position: absolute;
+  bottom: 30px;
+  margin-left: 50%;
+    left: -($dim/2);
+  width: $dim;
+  height: $dim;
+  z-index: 30; 
 }
 
-.page-hero__label{
+.hero__label{
   display: inline-block;
   margin-bottom: 15px;
   @include small-only { 
     display: none;  
   }
 } 
-.page-hero__excerpt{
+.hero__excerpt{
   @include small-only {
   	p { 
       display: none; 
     } 
   }
 }
-.page-hero{
+.hero{
     position: relative; 
     overflow-y: hidden;
     $slide-height: 260px;
@@ -52,7 +50,7 @@
         align-items: center;
         justify-content: center; 
     }
-    .page-hero__excerpt{ 
+    .hero__excerpt{ 
         position: relative; 
         width: 70%; 
         max-width:600px;  
@@ -80,7 +78,7 @@
 
 
     @include medium {
-        &.page-hero-full-screen{
+        &.hero-full-screen{
             $slide-height: 400px;
             height: $slide-height;
             .carousel-inner,
@@ -92,7 +90,7 @@
     
     //...
     @include large {
-        &.page-hero-full-screen{
+        &.hero-full-screen{
             $slide-height: 630px;
             height: $slide-height;
             .carousel-inner,
@@ -104,7 +102,7 @@
     
     //...
     @include a-little-larger {
-        &.page-hero-full-screen{
+        &.hero-full-screen{
             $slide-height: 100vh;
             height: $slide-height;
             .carousel-inner,

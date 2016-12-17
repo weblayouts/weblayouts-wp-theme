@@ -4,7 +4,7 @@
 */
 ( function( $ ) { 
 	//.......
-	let $page_hero = $('#page-hero'); 
+	let $page_hero = $('#hero'); 
 
 	//...
 	wl_categoryFilters.initialize(); 

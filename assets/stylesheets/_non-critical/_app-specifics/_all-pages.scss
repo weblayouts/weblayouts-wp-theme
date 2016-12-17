@@ -54,28 +54,7 @@
 
 
 
-.archive, .tag{
-	.page-hero{
-		background-color: $color__gray_darker;
-		text-align: center;
-		.page-title{
-			color: #fff;
-			text-transform: uppercase;
-		}
-		.taxonomy-description{
-			display: none;
-		}
-        @include large {
-            height: 400px;
-            .item-content{
-            	height: 400px;
-            }
-            .taxonomy-description{
-            	display: block;
-            }
-        }
-	}
-}
+
 
 
 

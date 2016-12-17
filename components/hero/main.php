@@ -2,13 +2,13 @@
 	$cssClass = '';
 	//full screen except for Category or Tag pages ...
 	if(!is_category() && !is_tag()){
-		$cssClass .= ' page-hero-full-screen';
+		$cssClass .= ' hero-full-screen';
 	}
 	if(!is_home()){
 		$cssClass .= ' flex-container x-align-items-center y-align-items-center';
 	}
 ?>
-<section id="page-hero" class="page-hero<?php echo $cssClass; ?>">
+<section id="hero" class="hero <?php echo $cssClass; ?>">
 	<?php 
 		//Home page ...
 		if(is_home()){ //display "featured" only on 
@@ -39,10 +39,10 @@
 			<?php
 		}
 	?> 
-	<button id="btn-push-down" class="btn-push-down">
+	<button id="btn-push-down" class="hero__btn-scroll-down">
 		<span class="screen-reader-text">Scroll page down</span>
 	</button>
-</section><!-- page-hero -->
+</section><!-- hero -->
 
 						
 

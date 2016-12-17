@@ -37,13 +37,8 @@
 
 .home{
 	.site-main, .content-latest-articles{
-     	margin-bottom: 0;
-  	}
-	.page-hero{
-		@include no-bigger-than-medium {
-			margin-bottom: 30px;
-		} 
-	}
+   	margin-bottom: 0;
+	} 
 	.list--catfilter{
 		display: flex;
 	    align-items: center;

@@ -1,11 +1,8 @@
 /*------------------------------------*\
-  #PAGE-HERO
+  #hero
 \*------------------------------------*/
 
-.page-hero{
-	.btn-push-down{  
-	    background: url(../img/sprite.png);
-	}
+.hero{
 	
 
     // I'm removing Bootstrap
@@ -27,10 +24,13 @@
         }
     }
 }
+.hero__btn-scroll-down{  
+    background: url(../img/sprite.png);
+}
 
 
 
-.page-hero{ 
+.hero{ 
     $slide-height: 220px;
  
     .item-cta{
@@ -47,15 +47,53 @@
         }
     }
 }
-.page-hero__excerpt{  
+.hero__excerpt{  
     color: #fff;
 }
-.page-hero__title{
+.hero__title{
   color: #fff;
   a{ 
       color: #fff;
   }
   margin-top: 0;
 }
+
+
+
+.hero{
+	.archive &, .tag &{
+		background-color: $color__gray_darker;
+		text-align: center;
+		.page-title{
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.taxonomy-description{
+			display: none;
+		}
+        @include large {
+            height: 400px;
+            .item-content{
+            	height: 400px;
+            }
+            .taxonomy-description{
+            	display: block;
+            }
+        }
+	}
+}
+
+
+.hero{ 
+	.home &{
+		@include no-bigger-than-medium {
+			margin-bottom: 30px;
+		} 
+	}
+}
+
+
+
+
 
 

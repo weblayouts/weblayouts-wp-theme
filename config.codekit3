@@ -209,6 +209,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/stylesheets\/_critical\/scaffolding\/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/_critical\/css\/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/stylesheets\/_critical\/scaffolding\/_main-footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -231,19 +244,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/stylesheets\/_critical\/css\/_main-navigation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/stylesheets\/_critical\/scaffolding\/_page-hero.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_critical\/css\/_page-hero.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -365,6 +365,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/stylesheets\/_non-critical\/components\/_hero.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_hero.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/stylesheets\/_non-critical\/components\/_jetpack-widgets.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -387,19 +400,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_mixed-components.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/stylesheets\/_non-critical\/components\/_page-hero.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_page-hero.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

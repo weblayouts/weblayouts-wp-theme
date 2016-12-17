@@ -170,6 +170,10 @@ function get_image_from_media_library($post_title) {
 
 
 
+
+
+
+
 /**
  * Register widget area.
  *
@@ -230,6 +234,11 @@ function web_layouts_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'web_layouts_widgets_init' );
+
+
+
+
+
 
 /**
  * Enqueue scripts and styles.

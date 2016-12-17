@@ -156,7 +156,9 @@ function web_layouts_entry_category() {
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'web_layouts' ) );
-		$categories_list = str_replace(' rel=', ' class="btn-round alert label label-big text-uppercase" rel=', $categories_list);
+
+		$card_class = (is_home() || is_archive()) ? 'card__label ' : '';
+		$categories_list = str_replace(' rel=', ' class="'.$card_class.'button--round alert label label-big text-uppercase" rel=', $categories_list);
 		if ( $categories_list && web_layouts_categorized_blog() ) {  
 			printf( /*'<span class="cat-links">'.*/ esc_html__( '%1$s', 'web_layouts' ) /*. '</span>'*/, $categories_list ); // WPCS: XSS OK.
 		} 

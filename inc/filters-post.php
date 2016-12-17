@@ -31,4 +31,15 @@
 		return ' <a href="'.get_the_permalink().'" rel="nofollow" title="'.$title.'">[...]</a>';
 	}
 	add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
+
+
+
+
+	add_filter( "the_excerpt", "add_class_to_excerpt" );
+	function add_class_to_excerpt( $excerpt ) {
+		$p_class = (is_home() || is_archive()) ? 'class="card__excerpt"' : '';
+	    return str_replace('<p', '<p '.$p_class, $excerpt);
+	}
 ?>

@@ -30,6 +30,7 @@
 					the_title( '<h2 class="card__title card--row__title entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				} 
 			?> 
+
 			<?php 
 				the_excerpt();
 			?>

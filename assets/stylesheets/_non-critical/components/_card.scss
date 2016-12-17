@@ -12,12 +12,11 @@
 .card{ 
 	margin-bottom: 50px;
 	background-color: #fff;
-	box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.15); 
-	p{ 
-		color: $color__background-hr;
-	}//$color__text-input
+	box-shadow:         0px 7px 14px 0px rgba(50, 50, 50, 0.15);
 }
-
+.card__excerpt{ 
+	color: $color__background-hr;
+}
 .card__content{
 	padding: 2em;
 }
@@ -26,11 +25,11 @@
 }
 .card__thumbnail{
 	position: relative;
-	.label{
-		position: absolute;
-	    top: 30px;
-	    left: 30px;
-	}
+}
+.card__label{
+	position: absolute;
+    top: 30px;
+    left: 30px;
 }
 .card__footer{
 	padding: 0;

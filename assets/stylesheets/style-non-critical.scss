@@ -1,6 +1,6 @@
 /**
- * CONTENTS
- * --------
+ * STYLE-CRITICAL: CONTENTS
+ * ------------------------
  *
  * File structure inspired from:
  * https://github.com/zurb/foundation-sites/tree/develop/scss
@@ -34,7 +34,7 @@
 @import '_non-critical/scaffolding/main-navigation';
 @import '_non-critical/scaffolding/site-content';
 @import '_non-critical/scaffolding/main-footer';
-@import '_non-critical/scaffolding/drawerPanel';
+@import '_non-critical/scaffolding/drawer-panel';
 @import '_non-critical/scaffolding/site-header'; 
 
 // -------- SPECIFIC TO APPLICATION ------------- 
@@ -45,15 +45,14 @@
 // -------- COMPONENTS ------------- 
 @import '_non-critical/components/page-hero'; 
 @import '_non-critical/components/pagination';
-// @import '_non-critical/components/carousel';
-@import '_non-critical/components/list-pills';
-@import '_non-critical/components/post-sample';
+// @import '_non-critical/components/carousel'; 
+@import '_non-critical/components/card';
 @import '_non-critical/components/posts';
 @import '_non-critical/components/widgets'; 
 @import '_non-critical/components/mixed-components';
 @import '_non-critical/components/focus-on-components';
-@import '_non-critical/components/jetpack_subscription_widget';
-@import '_non-critical/components/codepen_embed_iframe';
+@import '_non-critical/components/jetpack-widgets';
+@import '_non-critical/components/embedded-code';
 @import '_non-critical/components/visibility';
 @import '_non-critical/components/buttons';
 

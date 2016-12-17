@@ -1,8 +1,8 @@
+/*------------------------------------*\
+  #DRAWER-PANEL
+\*------------------------------------*/
 
-
-
-
-.drawerPanel{ 
+.drawer-panel{ 
     background: #fff; 
 
     .main-logo{
@@ -67,10 +67,10 @@
         display: none;
     }
 }
-.drawerPanel-content{
+.drawer-panel-content{
     display: none;
 }
-.toggled .drawerPanel-content{
+.toggled .drawer-panel-content{
     display: block;
 }
 
@@ -78,7 +78,7 @@
 
    
 
-.drawerPanel{
+.drawer-panel{
     li{
         width: 100%;
     }
@@ -88,7 +88,7 @@
         border-width: 0;
         text-decoration: none;
     }
-    .drawerPanel ul li{
+    .drawer-panel ul li{
         line-height: 3em;
         border-bottom: 1px dashed #bbb;
     }
@@ -100,7 +100,7 @@
 
 
     //(body with this class)
-    .drawerPanel--active &{
+    .drawer-panel--active &{
         transform: translate(0,0);
     }
 }

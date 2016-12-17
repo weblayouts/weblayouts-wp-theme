@@ -1,6 +1,7 @@
-@mixin test {
-	@content;
-}
+/*------------------------------------*\
+  #CONTENT-LATEST-ARTICLES
+\*------------------------------------*/
+
 .content-latest-articles{
 	$gap : 20px; 
 
@@ -12,7 +13,7 @@
 	    clear: both;
 	}
 
-	.post-sample-frame{  
+	.card--frame{  
 		@include large { 
 			float: left;
 			padding-left: $gap;

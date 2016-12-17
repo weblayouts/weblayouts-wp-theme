@@ -1,7 +1,10 @@
+/*------------------------------------*\
+  #CARD
+\*------------------------------------*/
 
 /**
- * ".card-column"
- * Different arrangement of sample of post displayed in loops
+ * Based on:
+ * http://ui-patterns.com/patterns/cards
 */
 
 
@@ -41,43 +44,17 @@
 		color: $color__text-input;
 	}
 }
-.entry-footer{
-	font-size: 0.7em;
-	padding-top: 15px;
-	// .fa{
-	// 	color: $color__link;
-	// }
-	a{
-		text-decoration: underline;
-		&:hover{
-			text-decoration: none;
-		}
-	} 
-}
-.entry-meta{
-    @include font-family-serif();  
-	//small screens only
-	@include small-only {
-		font-size: 0.85em;
-	}
-	> span{
-		display: inline-block;
-		margin-right: 20px;
-		&:last-child{
-			margin-right: 0;
-		}
-	}
-}
 
 
 
-//.card-column
+
+//.card--column
 //Components arrangements are:
 //1) thumbnail
 //2) title
 //3) text excerpt
 //4) author, date, comments
-.card-column{
+.card--column{
 	.entry-content{
 		@include a-little-larger {
 			min-height: 220px;
@@ -88,14 +65,14 @@
 
 
 
-//.card-row
+//.card--row
 //Components arrangements are:
 //1) thumbnail and "text block" in 1 row
 //-> within "text block":
 //-> 2) title
 //-> 3) text excerpt
 //-> 4) author, date, comments
-.card-row{ 
+.card--row{ 
 	display: flex;
 	margin-bottom: 50px;
  

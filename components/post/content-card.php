@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-sample post-sample-column'); // large-4 columns ?> >
+<article id="post-<?php the_ID(); ?>" <?php post_class('card card--column'); // large-4 columns ?> >
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
 		<div class="post-thumbnail">
 

@@ -28,7 +28,7 @@ get_header(); ?>
 						 * called content-search.php and that will be used instead.
 						 */
 						// get_template_part( 'components/post/content', 'search' );
-						get_template_part( 'components/post/content-sample', 'archive' );
+						get_template_part( 'components/post/content-card', 'archive' );
 
 					endwhile;
 

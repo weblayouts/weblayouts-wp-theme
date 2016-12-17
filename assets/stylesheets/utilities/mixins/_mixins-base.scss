@@ -1,4 +1,6 @@
-
+/*------------------------------------*\
+  #MIXINS
+\*------------------------------------*/
 
 @mixin calc($property, $expression) {
   #{$property}: -moz-calc(#{$expression});

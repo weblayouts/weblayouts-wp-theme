@@ -196,7 +196,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/stylesheets\/_critical\/scaffolding\/_drawerPanel.scss": {
+	"\/assets\/stylesheets\/_critical\/scaffolding\/_drawer-panel.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -204,7 +204,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_critical\/css\/_drawerPanel.css",
+		"oAP": "\/assets\/stylesheets\/_critical\/css\/_drawer-panel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -313,6 +313,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/stylesheets\/_non-critical\/components\/_card.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_card.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/stylesheets\/_non-critical\/components\/_carousel.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -326,7 +339,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/stylesheets\/_non-critical\/components\/_codepen_embed_iframe.scss": {
+	"\/assets\/stylesheets\/_non-critical\/components\/_embedded-code.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -334,7 +347,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_codepen_embed_iframe.css",
+		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_embedded-code.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -352,7 +365,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/stylesheets\/_non-critical\/components\/_jetpack_subscription_widget.scss": {
+	"\/assets\/stylesheets\/_non-critical\/components\/_jetpack-widgets.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -360,20 +373,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_jetpack_subscription_widget.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/stylesheets\/_non-critical\/components\/_list-pills.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_list-pills.css",
+		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_jetpack-widgets.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -413,19 +413,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_pagination.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/stylesheets\/_non-critical\/components\/_post-sample.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_post-sample.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -495,7 +482,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/assets\/stylesheets\/_non-critical\/scaffolding\/_drawerPanel.scss": {
+	"\/assets\/stylesheets\/_non-critical\/scaffolding\/_drawer-panel.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -503,7 +490,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_drawerPanel.css",
+		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_drawer-panel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -808,6 +795,18 @@
 		"oAP": "\/components\/page\/content-thankyou.php",
 		"oF": 0
 		},
+	"\/components\/post\/content-card-archive.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/components\/post\/content-card-archive.php",
+		"oF": 0
+		},
+	"\/components\/post\/content-card.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/components\/post\/content-card.php",
+		"oF": 0
+		},
 	"\/components\/post\/content-category.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -836,18 +835,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/components\/post\/content-none.php",
-		"oF": 0
-		},
-	"\/components\/post\/content-sample-archive.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/components\/post\/content-sample-archive.php",
-		"oF": 0
-		},
-	"\/components\/post\/content-sample.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/components\/post\/content-sample.php",
 		"oF": 0
 		},
 	"\/components\/post\/content-search.php": {

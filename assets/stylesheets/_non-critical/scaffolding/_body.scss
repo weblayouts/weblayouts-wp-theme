@@ -1,3 +1,6 @@
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
 
 *{
 	-webkit-box-sizing: border-box;
@@ -20,7 +23,7 @@ body{
 	background-color: $color__background-screen;
 
 
-	&.drawerPanel--active { 
+	&.drawer-panel--active { 
         &:before{
             content: '';
             position: fixed;

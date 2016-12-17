@@ -38,7 +38,7 @@ let wl_categoryFilters = (function(){
 		if(btn_filter.data('filter') == 'category-all'){
 			//deactivate all other filters
 			jQuery('.cat-filter:not([data-filter="category-all"])').removeClass( id_current );
-			filter_query.fadeIn = '.post-sample';
+			filter_query.fadeIn = '.card';
 			filter_query.fadeOut = '';
 		}
 		else{
@@ -52,7 +52,7 @@ let wl_categoryFilters = (function(){
 			//...
 			let _target_filters 	= jQuery('.cat-filter.current').map(function(){ return '.'+jQuery(this).data('filter') }).get().join();
 			filter_query.fadeIn 	= _target_filters;
-			filter_query.fadeOut 	= '.post-sample:not('+_target_filters+')';
+			filter_query.fadeOut 	= '.card:not('+_target_filters+')';
 		}
 
 		return filter_query;

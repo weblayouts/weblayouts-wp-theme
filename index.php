@@ -55,8 +55,8 @@ get_header(); ?>
 								 * If you want to override this in a child theme, then include a file
 								 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 								 */
-								echo '<div class="post-sample-frame">';
-								get_template_part( 'components/post/content', 'sample');
+								echo '<div class="card--frame">';
+								get_template_part( 'components/post/content', 'card');
 								echo '</div>';
 							}
 							

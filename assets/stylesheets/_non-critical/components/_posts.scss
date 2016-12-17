@@ -1,4 +1,34 @@
+/*------------------------------------*\
+  #POST
+\*------------------------------------*/
 
+.entry-footer{
+	font-size: 0.7em;
+	padding-top: 15px;
+	// .fa{
+	// 	color: $color__link;
+	// }
+	a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	} 
+}
+.entry-meta{
+    @include font-family-serif();  
+	//small screens only
+	@include small-only {
+		font-size: 0.85em;
+	}
+	> span{
+		display: inline-block;
+		margin-right: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
   
 
 .entry-title{ 

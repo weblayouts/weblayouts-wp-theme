@@ -10,11 +10,11 @@ let wl_mobileNavControl = (function(){
 
 	_public.initialize = function(mq){ 
 
-		_priv.main_sidebar = document.querySelector('.drawerPanel');
+		_priv.main_sidebar = document.querySelector('.drawer-panel');
 	
 		//[Toggle main] Display ...
 		jQuery('body').on('click', '#btn-hamburger', function(){
-			jQuery('body').addClass('drawerPanel--active');
+			jQuery('body').addClass('drawer-panel--active');
 			_priv.main_sidebar.setAttribute('aria-hidden','false');
 			_priv.main_sidebar.setAttribute('tabindex','2');
 		});
@@ -25,8 +25,8 @@ let wl_mobileNavControl = (function(){
 			let tClass = event.target.className; //target class 
 			if(tClass!=='' && tClass!==undefined && typeof tClass === 'string'){ 
 				if(tClass.indexOf('btn-close-sidebar')>-1 ||
-					tClass.indexOf('drawerPanel--active')>-1){
-					jQuery('body').removeClass('drawerPanel--active');
+					tClass.indexOf('drawer-panel--active')>-1){
+					jQuery('body').removeClass('drawer-panel--active');
 					_priv.main_sidebar.setAttribute('aria-hidden','true');
 					_priv.main_sidebar.setAttribute('tabindex','-1'); 
 				}

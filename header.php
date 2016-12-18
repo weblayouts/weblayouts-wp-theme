@@ -37,7 +37,7 @@
 			dispay_custom_logo('large', 'dark');
 		?>
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
-	</div><!-- drawerPanel -->
+	</div><!-- drawer-panel -->
 	
 
 	<header id="masthead" class="site-header" role="banner"> 

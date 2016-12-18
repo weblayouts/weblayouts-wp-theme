@@ -1,10 +1,45 @@
 /*------------------------------------*\
   #CAROUSEL
 \*------------------------------------*/
+/**
+ * Override Bootstrap native styling and give the carousel its "distinctive" look.
+ * ....
+*/
+
 
 /**
- * INFORCE "FADE" EFFECT ON BOOTSTRAP CAROUSEL
- * ....
+ * Change carousel dimensions
+*/
+.carousel{ 
+	$heigh-controls: 100px;
+	.entry-title, .entry-meta{
+		position: relative; 
+		//Make sure slide content is above
+		//any opaque screen
+		z-index: 5;
+		a, .fa{
+			color: #fff;
+		}
+		a{ 
+			&:hover{
+				color: $color__link;
+			}
+		}
+	}  
+
+	.post-thumbnail{
+		position: relative; 
+	} 
+
+	.carousel-control{
+		top: calc(50% - #{$heigh-controls}/2);
+		height: $heigh-controls;
+	}
+}
+
+
+/**
+ * Inforce "fade" animation on slides
 */
 .carousel-fade {
     .carousel-inner {
@@ -39,32 +74,10 @@
 }
 
 
-.carousel{ 
-	$heigh-controls: 100px;
-	.entry-title, .entry-meta{
-		position: relative; 
-		//Make sure slide content is above
-		//any opaque screen
-		z-index: 5;
-		a, .fa{
-			color: #fff;
-		}
-		a{ 
-			&:hover{
-				color: $color__link;
-			}
-		}
-	}  
-
-	.post-thumbnail{
-		position: relative; 
-	} 
-
-	.carousel-control{
-		top: calc(50% - #{$heigh-controls}/2);
-		height: $heigh-controls;
-	}
-}
+/**
+ * Change indicators look
+ * ....
+*/
 .carousel-indicators{
 	$frame-width: 600px;
 	$width: 40px;

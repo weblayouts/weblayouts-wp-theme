@@ -22,19 +22,17 @@
 		}else if(is_category() || is_tag()){
 	?>
 		<?php
-			the_archive_title( '<h1 class="page-title widget-title-">', '</h1>' );
-			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+			the_archive_title( '<h1 class="hero__title">', '</h1>' );
+			the_archive_description( '<div class="hero__taxonomy-description">', '</div>' );
 		?>
 		<?php //end [Category or Tag pages]... ?>
  
-	<?php }else{ ?> 
-
- 
+	<?php }else{ ?>  
 		<?php //Other pages ...
 			//.................
 			//category link to be displayed only on 
 			//"post" related instances ...
-			if(!is_page()):
+			if(!is_page() && !is_404()):
 			$cattt = get_the_category( get_the_ID() );
 			$cattt_link = get_category_link( $cattt[0]->cat_ID ); 
 		?>
@@ -47,6 +45,11 @@
 		<?php the_title( '<h1 class="hero__title entry-title">', '</h1>' ); ?>
 		<?php the_excerpt(); ?>
 		<?php //end [Other pages]... ?>
+
+		<?php if(is_404()): ?>
+		<h1 class="hero__title entry-title">404</h1>
+		<h2 class="hero__subtitle">Page Not Found!</h1>
+		<?php endif; ?>
 
 
 	<?php } ?>

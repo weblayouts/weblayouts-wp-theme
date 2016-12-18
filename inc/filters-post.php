@@ -39,7 +39,7 @@
 
 	add_filter( "the_excerpt", "add_class_to_excerpt" );
 	function add_class_to_excerpt( $excerpt ) {
-		$p_class = (is_home() || is_archive()) ? 'class="card__excerpt"' : '';
+		$p_class = (is_home() || is_archive()) ? 'class="hero__text-excerpt card__excerpt"' : '';
 	    return str_replace('<p', '<p '.$p_class, $excerpt);
 	}
 ?>

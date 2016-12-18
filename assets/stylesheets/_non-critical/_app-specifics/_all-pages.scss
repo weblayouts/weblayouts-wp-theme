@@ -15,6 +15,9 @@
 
 
 
+/*------------------------------------*\
+  #SINGLE
+\*------------------------------------*/
 
 .single{
 	.post-meta{
@@ -50,63 +53,6 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//Template with sidebar image
-//(404) page uses the same style
-.page-template-template-sidebar-image, .error404{
-	.content-area{
-		display: flex;
-		@include small-only {
-			.decoration{
-				width: 100%;
-			}
-		}
-		@include no-bigger-than-medium {
-			flex-direction: column-reverse;
-			.site-main {
-				width: 100%;
-			}
-			.decoration{
-				min-height: 300px;
-			}
-		}
-
-		@include medium-only {
-			.entry-content, .page-content {
-				column-count: 2;
-				column-gap: 40px;
-			}
-			.decoration{ 
-				margin-left: 15px;
-				width: calc(100% - 30px); 
-    			background-position: center -150px!important;
-			}
-		}
-		@include a-little-larger { 
-			.decoration{
-				margin-right: 15px;
-			}
-		}
-	}
-
-
-	.decoration{
-		background-size: cover; 
-		background-position: center top;
-	}
-}
-
 
 
 

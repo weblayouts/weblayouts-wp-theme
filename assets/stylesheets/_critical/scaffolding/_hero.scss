@@ -3,15 +3,31 @@
 \*------------------------------------*/
 
 $hero-height: 260px;
-.hero{ 
+.hero{
+  position: relative; 
+  overflow-y: hidden;
+  height: $hero-height;
 	margin-bottom: 80px;
+
+  p{
+    margin-bottom: 1.2em;
+  }
 }
+
+.hero__featured-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    max-width: 100%;
+    z-index: 1;
+}
+
 .hero__btn-scroll-down{
 	$dim: 32px;
 	position: absolute;
   bottom: 30px;
   margin-left: 50%;
-    left: -($dim/2);
+ 	left: -($dim/2);
   width: $dim;
   height: $dim;
   z-index: 30; 
@@ -24,6 +40,7 @@ $hero-height: 260px;
     display: none;  
   }
 } 
+
 .hero__excerpt{
   @include small-only {
   	p { 
@@ -31,93 +48,76 @@ $hero-height: 260px;
     } 
   }
 }
+
 .hero__cta{ 
   font-size: 0.85em;
 }
+
 .hero__content{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%; 
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
   height: $hero-height;
-} 
-.hero__content{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%; 
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
 }
-.hero{
+
+.hero__carousel-inner{
+  min-height: $hero-height;
+}
+
+.hero__excerpt{ 
   position: relative; 
-  overflow-y: hidden;
-  height: $hero-height;
-
-  .item .wp-post-image{
-      position: absolute;
-      top:0;
-      left: 0;
-      max-width: 100%;
-      z-index: 1;
-  }
-  p{
-      margin-bottom: 1.2em;
-  }
-
-  .carousel-inner{
-      min-height: $hero-height;
-  }
+  width: 70%; 
+  max-width:600px;  
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  z-index: 3; 
+}
 
 
+
+
+
+/*------------------------------------*\
+  #hero modifier (full-screen)
+\*------------------------------------*/
+.hero--full-screen{
   @include medium {
-      &.hero-full-screen{
-          $hero-height: 400px;
-          height: $hero-height;
-          .carousel-inner,
-          .hero__content{
-              height: $hero-height;
-          }  
-      }
+    $hero-height: 400px;
+    height: $hero-height;
+    .hero__carousel-inner,
+    .hero__content{
+        height: $hero-height;
+    } 
   }
-  
   //...
-  @include large {
-      &.hero-full-screen{
-          $hero-height: 630px;
-          height: $hero-height;
-          .carousel-inner,
-          .hero__content{
-              height: $hero-height; 
-          }  
-      } 
+  @include large { 
+    $hero-height: 630px;
+    height: $hero-height;
+    .hero__carousel-inner,
+    .hero__content{
+        height: $hero-height; 
+    }  
   }
-    
   //...
-  @include a-little-larger {
-      &.hero-full-screen{
-          $hero-height: 100vh;
-          height: $hero-height;
-          .carousel-inner,
-          .hero__content{
-              height: $hero-height;
-          }     
-      }
+  @include a-little-larger { 
+    $hero-height: 100vh;
+    height: $hero-height;
+    .hero__carousel-inner,
+    .hero__content{
+        height: $hero-height;
+    }  
   } 
 }
-.hero__excerpt{ 
-    position: relative; 
-    width: 70%; 
-    max-width:600px;  
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    z-index: 3; 
-}
 
 
+  
 
-
-
-
-
+    
 
 
 

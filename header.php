@@ -34,7 +34,7 @@
 			<span class="screen-reader-text">Hide Sidebar</span>
 		</button> 
 		<?php 
-			dispay_custom_logo('large', 'dark');
+			dispay_custom_logo('large', 'large', 'dark');
 		?>
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
 	</div><!-- drawer-panel -->

@@ -36,11 +36,11 @@ add_filter( 'body_class', 'web_layouts_body_classes' );
 
 
 //...
-function dispay_custom_logo($size, $color){
+function dispay_custom_logo($size_logo, $size_class, $color){
 	$description = get_bloginfo( 'description', 'display' ); 
 	?> 
-	<a class="main-logo main-logo-<?php echo $size; ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo $description; ?>">
-		<?php get_template_part( 'components/shared/logo-'.$size, $color ); ?>
+	<a class="logo logo--<?php echo $size_class; ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php echo $description; ?>">
+		<?php get_template_part( 'components/shared/logo--'.$size_logo, $color ); ?>
 	</a>
 	<?php
 }

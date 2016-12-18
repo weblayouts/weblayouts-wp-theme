@@ -1,0 +1,62 @@
+/*------------------------------------*\
+  #LOGO
+\*------------------------------------*/
+
+.logo{
+	.footer-item &{
+		display: inline-block;
+	}
+}
+
+.logo__svg{  
+	.main-footer & { 
+		margin: 0;
+		@include no-bigger-than-medium {  
+			margin: 0 auto;
+		} 
+	}
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #LOGO SMALL
+\*------------------------------------*/
+
+.logo--small{
+	.site-header &{ 
+		@include no-bigger-than-medium{
+			display: block;
+		} 
+    @include large {
+			display: none; 
+    }
+	} 
+
+	.logo__svg{
+		width: 150px;
+	}
+}
+
+
+
+
+
+
+/*------------------------------------*\
+  #LOGO LARGE
+\*------------------------------------*/
+
+.logo--large{
+	.site-header &{ 
+		@include no-bigger-than-medium{
+			display: none;
+		} 
+    @include large {
+			display: block; 
+    }
+	} 
+}

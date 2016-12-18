@@ -14,7 +14,7 @@
 }
 
 
-.main-logo, .btn-hamburger{
+.logo, .btn-hamburger{
 	&:focus{
 		@include large { 
 			border: 3px solid #fff;
@@ -58,7 +58,7 @@
 
 
 
-.main-navigation a, .main-logo,
+.main-navigation a, .logo,
 .entry-content a, .entry-footer a, .widget a,
 .wp-pagenavi a, .main-footer p a,
 .footer-copyright .list-inline a,

@@ -51,10 +51,10 @@ let wl_mqForAssistiveTech = (function(){
 	_public.initialize = function(){
 		//...
 		_priv.btnHamburger = document.getElementById('btn-hamburger');
-		_priv.hLogoLarge = document.querySelector('.main-logo-large');
-		_priv.hLogoSmall = document.querySelector('.main-logo-small');
-		_priv.fLogoLarge = document.querySelector('.main-footer .main-logo-large');
-		_priv.fLogoSmall = document.querySelector('.main-footer .main-logo-small');
+		_priv.hLogoLarge = document.querySelector('.site-header .logo--large');
+		_priv.hLogoSmall = document.querySelector('.site-header .logo--small');
+		_priv.fLogoLarge = document.querySelector('.main-footer .logo--large');
+		_priv.fLogoSmall = document.querySelector('.main-footer .logo--small');
 
 
 		// if(typeof matchMedia=='function'){  console.log('>>>>>');

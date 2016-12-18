@@ -1,6 +1,6 @@
 <?php
-	dispay_custom_logo('large', 'light');
-	dispay_custom_logo('small', 'light');
+	dispay_custom_logo('large', 'large', 'light');
+	dispay_custom_logo('small', 'small', 'light');
 ?>	
 <button id="btn-hamburger" class="btn-hamburger menu-toggle" 
 aria-controls="top-menu" aria-expanded="false"> 

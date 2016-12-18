@@ -14,11 +14,9 @@
 	<footer id="colophon" class="main-footer" role="contentinfo"> 
 		<div class="row flex-container">
 			<div class="footer-item">
-				<?php 
-					dispay_custom_logo('large', 'light');
-					dispay_custom_logo('small', 'light');
-				?>
-				<?php //get_template_part( 'components/shared/logo', 'light' ); ?> 
+				<?php  
+					dispay_custom_logo('large', 'small', 'light');
+				?> 
 			</div>
 			<div class="footer-copyright footer-item">
 				<p>
@@ -70,10 +68,6 @@
 	</footer>
 	</div><!-- site-content -->
 </div><!-- site -->
-
-
-<!-- Mailchimp subscription popup -->
-<!-- <script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us1.list-manage.com","uuid":"dae40c7c2215015ad591513bb","lid":"96a17a8260"}) })</script> -->
 
 
 <?php wp_footer(); ?>

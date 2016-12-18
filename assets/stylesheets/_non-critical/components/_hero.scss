@@ -55,6 +55,9 @@
   }
   line-height: 1.1em;
   margin-top: 0;
+  @include small-only {
+  	font-size: 1.4em;
+  }
 }
 
 

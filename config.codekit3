@@ -144,6 +144,19 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/stylesheets\/_critical\/components\/_logo.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/_critical\/css\/_logo.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/stylesheets\/_critical\/components\/_mix.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -387,6 +400,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_jetpack-widgets.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/stylesheets\/_non-critical\/components\/_logo.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/stylesheets\/_non-critical\/css\/_logo.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -873,34 +899,34 @@
 		"oAP": "\/components\/shared\/hamburger.php",
 		"oF": 0
 		},
-	"\/components\/shared\/logo-large-dark.php": {
+	"\/components\/shared\/logo--large-dark.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/components\/shared\/logo-large-dark.php",
+		"oAP": "\/components\/shared\/logo--large-dark.php",
 		"oF": 0
 		},
-	"\/components\/shared\/logo-large-light.php": {
+	"\/components\/shared\/logo--large-light.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/components\/shared\/logo-large-light.php",
+		"oAP": "\/components\/shared\/logo--large-light.php",
 		"oF": 0
 		},
-	"\/components\/shared\/logo-light.php": {
+	"\/components\/shared\/logo--light.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/components\/shared\/logo-light.php",
+		"oAP": "\/components\/shared\/logo--light.php",
 		"oF": 0
 		},
-	"\/components\/shared\/logo-small-dark.php": {
+	"\/components\/shared\/logo--small-dark.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/components\/shared\/logo-small-dark.php",
+		"oAP": "\/components\/shared\/logo--small-dark.php",
 		"oF": 0
 		},
-	"\/components\/shared\/logo-small-light.php": {
+	"\/components\/shared\/logo--small-light.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/components\/shared\/logo-small-light.php",
+		"oAP": "\/components\/shared\/logo--small-light.php",
 		"oF": 0
 		},
 	"\/components\/shared\/logo.eps": {

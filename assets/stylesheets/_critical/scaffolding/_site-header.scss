@@ -7,76 +7,30 @@
 	width: 100%;
     z-index: 20;
 
-    > .flex-container{
-    	@include large {
-	    	height: 200px; 
+  > .flex-container{
+  	@include large {
+	  	height: 200px; 
 		}
-    }
+  }
 
-    .main-logo.main-logo-small{
-    	position: absolute;
-	    left: 20px;
-	    top: 10px;
-		width: 150px;
-    }
-
-    .logo-branding{  
-		&.logo-large{
-			display:none;
-    		width: 220px;
-		}
-		&.logo-small{
-			display:block;
-			width: 150px;
-		}
- 
-    	@include large {
-			&.logo-large{
-				display:block;
-			}
-			&.logo-small{
-				display:none;
-			}
-		} 
-    }
-
-    .btn-hamburger{ 
-	    position: absolute;
-	    top: 15px;
-	    right: 15px;
-	    line-height: 0.7em;
-	    font-size: 1.1em;
-	    //Hide on larger devices ...
-	    @include large {//992px 
+  .btn-hamburger{ 
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    line-height: 0.7em;
+    font-size: 1.1em;
+    //Hide on larger devices ...
+    @include large {
 			display: none; 
-	    }
     }
-    //Hide on less than larger devices ...
-    @include no-bigger-than-medium {
-        .main-navigation{
+  }
+  //Hide on less than larger devices ...
+  @include no-bigger-than-medium {
+      .main-navigation{
 			display: none;
 		}
-    }
-
-
-
+  }
 }
 
 
 
-.logo-branding-large{
-	display: none; 
-	@include large {
-		display: block;
-	}
-}
-.logo-branding-small{
-	display: block;
-	@include large {
-		display: none;
-	}
- 
-	width: 150px; 
-	height: 68px; 
-	background:lime; 
-}

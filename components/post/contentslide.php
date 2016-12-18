@@ -9,7 +9,7 @@
 ?>
 
  
-<div class="item-content full-screen-display">  
+<div class="hero__content item-content full-screen-display">  
 	<?php get_template_part( 'components/hero/excerpt', '' ); ?>
 	<?php the_post_thumbnail( 'web_layouts-full' ); ?> 
 </div>

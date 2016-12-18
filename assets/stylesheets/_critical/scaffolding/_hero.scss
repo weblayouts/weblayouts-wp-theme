@@ -2,6 +2,7 @@
   #hero
 \*------------------------------------*/
 
+$hero-height: 260px;
 .hero{ 
 	margin-bottom: 80px;
 }
@@ -30,88 +31,93 @@
     } 
   }
 }
-.hero{
-    position: relative; 
-    overflow-y: hidden;
-    $slide-height: 260px;
-    height: $slide-height;
-
-    // .carousel-inner,
-    .item-content{
-        height: $slide-height;
-    } 
-    .item-content{
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%; 
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-    }
-    .hero__excerpt{ 
-        position: relative; 
-        width: 70%; 
-        max-width:600px;  
-        padding-left: 0.9375rem;
-        padding-right: 0.9375rem;
-        z-index: 3; 
-    }
-    .item .wp-post-image{
-        position: absolute;
-        top:0;
-        left: 0;
-        max-width: 100%;
-        z-index: 1;
-    }
-    p{
-        margin-bottom: 1.2em;
-    }
-    .item-cta{ 
-        font-size: 0.85em;
-    }
-
-    .carousel-inner{
-        min-height: $slide-height;
-    }
-
-
-    @include medium {
-        &.hero-full-screen{
-            $slide-height: 400px;
-            height: $slide-height;
-            .carousel-inner,
-            .item-content{
-                height: $slide-height;
-            }  
-        }
-    }
-    
-    //...
-    @include large {
-        &.hero-full-screen{
-            $slide-height: 630px;
-            height: $slide-height;
-            .carousel-inner,
-            .item-content{
-                height: $slide-height; 
-            }  
-        } 
-    }
-    
-    //...
-    @include a-little-larger {
-        &.hero-full-screen{
-            $slide-height: 100vh;
-            height: $slide-height;
-            .carousel-inner,
-            .item-content{
-                height: $slide-height;
-            }     
-        }
-    } 
+.hero__cta{ 
+  font-size: 0.85em;
 }
+.hero__content{
+  height: $hero-height;
+} 
+.hero__content{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%; 
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.hero{
+  position: relative; 
+  overflow-y: hidden;
+  height: $hero-height;
+
+  .item .wp-post-image{
+      position: absolute;
+      top:0;
+      left: 0;
+      max-width: 100%;
+      z-index: 1;
+  }
+  p{
+      margin-bottom: 1.2em;
+  }
+
+  .carousel-inner{
+      min-height: $hero-height;
+  }
+
+
+  @include medium {
+      &.hero-full-screen{
+          $hero-height: 400px;
+          height: $hero-height;
+          .carousel-inner,
+          .hero__content{
+              height: $hero-height;
+          }  
+      }
+  }
+  
+  //...
+  @include large {
+      &.hero-full-screen{
+          $hero-height: 630px;
+          height: $hero-height;
+          .carousel-inner,
+          .hero__content{
+              height: $hero-height; 
+          }  
+      } 
+  }
+    
+  //...
+  @include a-little-larger {
+      &.hero-full-screen{
+          $hero-height: 100vh;
+          height: $hero-height;
+          .carousel-inner,
+          .hero__content{
+              height: $hero-height;
+          }     
+      }
+  } 
+}
+.hero__excerpt{ 
+    position: relative; 
+    width: 70%; 
+    max-width:600px;  
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    z-index: 3; 
+}
+
+
+
+
+
+
+
 
 
 

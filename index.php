@@ -13,6 +13,12 @@
  */
 
 get_header(); ?> 
+<h1>BEMing .hero class</h1>
+<h1>BEMing .hero class</h1>
+<h1>BEMing .hero class</h1>
+<h1>BEMing .hero class</h1>
+<h1>BEMing .hero class</h1>
+<h1>BEMing .hero class</h1>
 	<div id="primary" class="content-area row">
 		<main id="main" class="site-main medium-12 columns" role="main">   
 			

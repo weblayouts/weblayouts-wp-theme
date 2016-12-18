@@ -1,7 +1,4 @@
 <div class="hero__excerpt">
-
-
-
 	<?php //Home page ...
 		//...............
 		if(is_home()){
@@ -14,7 +11,7 @@
 			the_excerpt();
 			$access_title = esc_html__( 'Read more about : '.get_the_title(), 'web_layouts' );
 		?>
-		<a href="<?php the_permalink(); ?>" class="item-cta text-uppercase" title="<?php echo $access_title; ?>">
+		<a href="<?php the_permalink(); ?>" class="hero__cta text-uppercase" title="<?php echo $access_title; ?>">
 			<?php echo __( 'Read More', 'web_layouts' ); ?> &nbsp;
 			<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 		</a> 
@@ -47,7 +44,7 @@
 		<?php
 			endif;
 		?>
-		<?php the_title( '<h1 class="entry-title item-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="hero__title entry-title">', '</h1>' ); ?>
 		<?php the_excerpt(); ?>
 		<?php //end [Other pages]... ?>
 

@@ -3,6 +3,19 @@
 	// add_filter( 'wp_nav_menu_items', 'menupages_title', 10, 2 );
 	// add_filter( 'wp_nav_menu_items', 'menucategories_title', 10, 2 );
 
+
+
+	function generate_main_menu($menu_id){ //'top-pages-menu',
+		wp_nav_menu( 
+			array( 
+				'theme_location' 	=> 'menu-1', 
+				'menu_id' 			=> $menu_id,  
+				'menu_class' 		=> 'menu top-pages-menu list-unstyled', 
+				'container' 		=> false 
+			) 
+		);
+	}
+
 	//...
 	function menupages_title ( $items, $args ) {
     	if ($args->theme_location == 'menu-1') { 

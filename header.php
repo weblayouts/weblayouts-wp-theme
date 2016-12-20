@@ -29,23 +29,28 @@
 
 
 
-	<div class="drawer-panel" aria-hidden="true" tabindex="-1" style="visibility: hidden;">
+
+	<div id="drawer-panel" class="drawer-panel" aria-hidden="true" tabindex="-1" style="visibility: hidden;">
 		<button id="btn-close" class="btn-close btn-close-sidebar">
 			<span class="screen-reader-text">Hide Sidebar</span>
 		</button> 
 		<?php 
 			dispay_custom_logo('large', 'large', 'dark');
 		?>
-		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
+		<nav class="main-navigation mg-left-auto" role="navigation">
+			<?php generate_main_menu('drawer-panel__menu'); ?>
+		</nav>
 	</div><!-- drawer-panel -->
 	
 
 	<header id="masthead" class="site-header" role="banner"> 
 		<div class="row flex-container y-align-items-center"> 
 			<?php 
-				get_template_part( 'components/header/site', 'branding' ); 
-				get_template_part( 'components/navigation/navigation', 'top' ); 
+				get_template_part( 'components/header/site', 'branding' );  
 			?>
+			<nav class="main-navigation mg-left-auto" role="navigation">
+				<?php generate_main_menu('hero__menu'); ?>
+			</nav>
 		</div><!-- row -->
 	</header>
 

@@ -39,9 +39,10 @@
       text-decoration: none;
   } 
 }
-.hero__excerpt, .hero__title, .hero__text-excerpt{
- 	color: #fff;
-
+.hero{
+	.hero__excerpt, .hero__title, .hero__text-excerpt{
+	 	color: #fff;
+	}
 }
 .hero__excerpt{  
  	text-align: center;

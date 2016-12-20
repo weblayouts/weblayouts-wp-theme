@@ -29,7 +29,7 @@
 
 
 
-	<div class="drawer-panel" aria-hidden="true" tabindex="-1">
+	<div class="drawer-panel" aria-hidden="true" tabindex="-1" style="visibility: hidden;">
 		<button id="btn-close" class="btn-close btn-close-sidebar">
 			<span class="screen-reader-text">Hide Sidebar</span>
 		</button> 

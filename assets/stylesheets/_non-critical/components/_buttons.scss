@@ -23,6 +23,7 @@
 		background-color: #fff;
 	}
 	&:focus{
+		outline: 0;
 		//Add a "pulse" animation effect
 		//(TRY THIS FOR ALL BUTTONS AND LINKS)
 		border: 3px dashed $color__link;

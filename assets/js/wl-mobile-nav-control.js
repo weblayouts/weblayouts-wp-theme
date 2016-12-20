@@ -17,6 +17,7 @@ let wl_mobileNavControl = (function(){
 			jQuery('body').addClass('drawer-panel--active');
 			_priv.main_sidebar.setAttribute('aria-hidden','false');
 			_priv.main_sidebar.setAttribute('tabindex','2');
+			_priv.main_sidebar.style.visibility = 'visible';
 		});
 
 		//[Toggle main] Hide ...
@@ -29,6 +30,7 @@ let wl_mobileNavControl = (function(){
 					jQuery('body').removeClass('drawer-panel--active');
 					_priv.main_sidebar.setAttribute('aria-hidden','true');
 					_priv.main_sidebar.setAttribute('tabindex','-1'); 
+					_priv.main_sidebar.style.visibility = 'hidden';
 				}
 			} 
 		});

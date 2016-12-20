@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('card card--column'); // large-4 columns ?> >
+<article id="post-card-<?php the_ID(); ?>" <?php post_class('card card--column'); // large-4 columns ?> >
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
 		<div class="card__thumbnail card--column__thumbnail"> 
 			<?php get_template_part( 'components/post/content', 'category' ); ?>

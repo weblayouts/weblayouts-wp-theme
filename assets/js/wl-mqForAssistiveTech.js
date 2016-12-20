@@ -15,8 +15,7 @@ let wl_mqForAssistiveTech = (function(){
 		//When we are on large devices
 		if(mq.matches){
 			//...
-			_priv.showElement(_priv.hLogoLarge);
-			_priv.showElement(_priv.fLogoLarge);
+			_priv.showElement(_priv.hLogoLarge); 
 			_priv.hideElement(_priv.hLogoSmall);
 			_priv.hideElement(_priv.fLogoSmall);
 			_priv.hideElement(_priv.btnHamburger);
@@ -27,8 +26,7 @@ let wl_mqForAssistiveTech = (function(){
 			_priv.showElement(_priv.hLogoSmall);
 			_priv.showElement(_priv.fLogoSmall);
 			_priv.showElement(_priv.btnHamburger);
-			_priv.hideElement(_priv.hLogoLarge);
-			_priv.hideElement(_priv.fLogoLarge);
+			_priv.hideElement(_priv.hLogoLarge); 
 		}
 	};
 //
@@ -36,13 +34,17 @@ let wl_mqForAssistiveTech = (function(){
 	//Hide it for screen reader ...
 	//(remove it from the tab order)
 	_priv.hideElement = function(elt){
+		elt.setAttribute('aria-hidden','true');
 		elt.setAttribute('tabindex','-1');
+		elt.style.visibility = 'hidden';
 	};
 
 	//Show it for screen reader ...
 	//(put it back from the tab order)
 	_priv.showElement = function(elt){
+		elt.setAttribute('aria-hidden','false');
 		elt.setAttribute('tabindex','0');
+		elt.style.visibility = 'visible';
 	};
 
 
@@ -52,8 +54,7 @@ let wl_mqForAssistiveTech = (function(){
 		//...
 		_priv.btnHamburger = document.getElementById('btn-hamburger');
 		_priv.hLogoLarge = document.querySelector('.site-header .logo--large');
-		_priv.hLogoSmall = document.querySelector('.site-header .logo--small');
-		_priv.fLogoLarge = document.querySelector('.main-footer .logo--large');
+		_priv.hLogoSmall = document.querySelector('.site-header .logo--small'); 
 		_priv.fLogoSmall = document.querySelector('.main-footer .logo--small');
 
 

@@ -14,11 +14,13 @@
 }
 
 
-.logo, .btn-hamburger{
-	&:focus{
-		@include large { 
-			border: 3px solid #fff;
-		} 
+.logo, .btn-hamburger, .btn-close-sidebar, .hero__btn-scroll-down{
+	&:focus{ 
+		border: 1px solid $color__link;
+		box-shadow: 0px 1px 20px 0px rgba(220,45,0,1);
+		// @include large { 
+		// 	border: 3px solid #fff;
+		// } 
 	}
 }
  
@@ -31,11 +33,6 @@
 
  
 
-.main-navigation a{
-	&:focus{
-		color: $color__link; 
-	} 
-}
 
 .widget a, .entry-footer a, .entry-content a,
 .main-footer .main-navigation a, .main-footer p a{
@@ -62,7 +59,8 @@
 .entry-content a, .entry-footer a, .widget a,
 .wp-pagenavi a, .main-footer p a,
 .footer-copyright .list-inline a,
-.card .label, .btn-hamburger, .skip-link{ 
+.card .label, .btn-hamburger, .skip-link, .btn-close-sidebar,
+.hero__btn-scroll-down{ 
 	&:focus{ 
 		outline: 0;
 	}

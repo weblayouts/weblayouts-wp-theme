@@ -17,14 +17,14 @@ let wl_mqForAssistiveTech = (function(){
 			//...
 			_priv.showElement(_priv.hLogoLarge); 
 			_priv.hideElement(_priv.hLogoSmall);
-			_priv.hideElement(_priv.fLogoSmall);
+			// _priv.hideElement(_priv.fLogoSmall);
 			_priv.hideElement(_priv.btnHamburger);
 		}
 		//When we are on smaller devices
 		else{
 			//...
 			_priv.showElement(_priv.hLogoSmall);
-			_priv.showElement(_priv.fLogoSmall);
+			// _priv.showElement(_priv.fLogoSmall);
 			_priv.showElement(_priv.btnHamburger);
 			_priv.hideElement(_priv.hLogoLarge); 
 		}
@@ -55,7 +55,7 @@ let wl_mqForAssistiveTech = (function(){
 		_priv.btnHamburger = document.getElementById('btn-hamburger');
 		_priv.hLogoLarge = document.querySelector('.site-header .logo--large');
 		_priv.hLogoSmall = document.querySelector('.site-header .logo--small'); 
-		_priv.fLogoSmall = document.querySelector('.main-footer .logo--small');
+		// _priv.fLogoSmall = document.querySelector('.main-footer .logo--small');
 
 
 		// if(typeof matchMedia=='function'){  console.log('>>>>>');

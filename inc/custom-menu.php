@@ -5,15 +5,17 @@
 
 
 
-	function generate_main_menu($menu_id){ //'top-pages-menu',
-		wp_nav_menu( 
-			array( 
-				'theme_location' 	=> 'menu-1', 
-				'menu_id' 			=> $menu_id,  
-				'menu_class' 		=> 'menu top-pages-menu list-unstyled', 
-				'container' 		=> false 
-			) 
+	function generate_main_menu($menu_id, $walker_opt){ //'top-pages-menu', 
+		$options = array( 
+			'theme_location' 	=> 'menu-1', 
+			'menu_id' 				=> $menu_id,  
+			'menu_class' 			=> 'menu top-pages-menu list-unstyled', 
+			'container' 			=> false
 		);
+		if($walker_opt == true){ 
+			$options['walker'] = new Walker_add_button_class();
+		}
+		wp_nav_menu($options);
 	}
 
 	//...
@@ -65,6 +67,29 @@
           $item->title
         );
     	} 
+    } 
+  }
+
+
+
+
+	/**
+	 * Walker operating on menu's anchor tags in two ways:
+	 * 1) Adding the "button" classes
+	*/
+  class Walker_add_button_class extends Walker { 
+    // Tell Walker where to inherit it's parent and id values
+    var $db_fields = array(
+        'parent' => 'menu_item_parent', 
+        'id'     => 'db_id' 
+    );
+ 
+    function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {   
+      $output .= sprintf( "\n<li class='%s'><a href='%s' class='button button--small button--round button--dla'>%s</a></li>\n", 
+        implode(' ', $item->classes),
+        $item->url,
+        $item->title
+      ); 
     } 
   }
 

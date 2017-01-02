@@ -4,7 +4,8 @@
 
 // All plugin stylesheets:
 // -----------------------
-if(document.location.port !== '8888'){//Don't do that on "dev"
+if(document.location.hostname=='weblayouts.ca'){//Only in prodution
+	console.log('>>in production=', document.location.origin+'/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70')
 	loadCSS( document.location.origin+'/wp-content/plugins/browser-caching-with-htaccess/css/admin.css?ver=4.7' );
 	loadCSS( document.location.origin+'/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.6' );
 	loadCSS( document.location.origin+'/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' );

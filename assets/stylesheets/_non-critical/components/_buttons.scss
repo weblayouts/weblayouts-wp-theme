@@ -30,3 +30,30 @@
 		background-color: lighten($color__link, 40);
 	}
 }
+//red like the city of doala's ground
+.button--dla{
+	color: #fff;
+	background-color: transparent;
+	border: 3px solid transparent;
+	&:hover{
+		color: #fff;
+		background-color: $color__link;
+		border: 3px solid $color__link;
+	}
+	&:focus{	
+		color: #fff;
+		outline: 0;
+		//Add a "pulse" animation effect
+		//(TRY THIS FOR ALL BUTTONS AND LINKS)
+		border: 3px dashed $color__link;
+		background-color: lighten($color__link, 40);
+	}
+}
+
+
+
+.label.alert{
+	&:focus{
+		background-color: lighten($color__link, 40);
+	}
+}

@@ -111,7 +111,7 @@
 	"\/assets\/js\/wl-mobile-nav-control.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/assets\/js\/min\/wl-mobile-nav-control-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -122,6 +122,15 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/assets\/js\/min\/wl-mqForAssistiveTech-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/wl-offscreen-content-manager.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/assets\/js\/min\/wl-offscreen-content-manager-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1276,7 +1285,7 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/js\/wl-mobile-nav-control.js",
+			"linkedFileAbbreviatedPath": "\/assets\/js\/wl-offscreen-content-manager.js",
 			"position": 3,
 			"type": 0
 			}

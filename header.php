@@ -30,16 +30,16 @@
 
 
 
-	<div id="drawer-panel" class="drawer-panel" aria-hidden="true" tabindex="-1" style="visibility: hidden;">
-		<button id="btn-close" class="btn-close btn-close-sidebar">
+	<div id="drawer-panel" class="drawer-panel offscreen-content" aria-hidden="true" tabindex="-1" style="visibility: hidden;">
+		<nav class="main-navigation mg-left-auto" role="navigation">
+			<?php generate_main_menu('drawer-panel__menu', ''); ?>
+		</nav>
+		<button id="btn-close" class="btn-close btn-close-sidebar" data-close="offscreen-content">
 			<span class="screen-reader-text">Hide Sidebar</span>
 		</button> 
 		<?php 
 			dispay_custom_logo('large', 'large', 'dark');
 		?>
-		<nav class="main-navigation mg-left-auto" role="navigation">
-			<?php generate_main_menu('drawer-panel__menu'); ?>
-		</nav>
 	</div><!-- drawer-panel -->
 	
 
@@ -49,7 +49,7 @@
 				get_template_part( 'components/header/site', 'branding' );  
 			?>
 			<nav class="main-navigation mg-left-auto" role="navigation">
-				<?php generate_main_menu('hero__menu'); ?>
+				<?php generate_main_menu('hero__menu', true); ?>
 			</nav>
 		</div><!-- row -->
 	</header>

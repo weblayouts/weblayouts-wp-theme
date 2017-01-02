@@ -22,4 +22,25 @@
 		color: $color__error;
 		background-color : $color__error_light;
 	}
+	//frame surrounding text
+	form{
+		position: relative;
+	}
+	//Text describing the number of subscribers to the blog
+	p:first-of-type{
+		position: absolute;
+		top: 0;
+		padding: 0 10px;
+		margin: 0;
+		font-style: italic;
+		color: #fff;
+		font-size: 0.8em;
+		left: 0;
+		background: #dc2d00;
+		border-top-left-radius: 2px;
+		line-height: 1.5em;
+	}
+	input[type="submit"]{
+		background: transparent;
+	}
 }

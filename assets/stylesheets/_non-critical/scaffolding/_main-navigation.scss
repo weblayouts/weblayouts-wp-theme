@@ -7,18 +7,27 @@
 		text-transform: uppercase; 
 		font-size: 1em; 
 		font-weight: 900;
+		&:focus{
+			color: #fff;
+			background-color: lighten($color__link, 30)!important;
+	    @include large {
+				border: 3px solid transparent!important;
+	    }
+		} 
 	}
-}
-
-//colors ..
-.main-navigation{ 
-	a{ 
-		color: $color__background-body;
-		&:hover{
-			color: $color__link; 
+	.current_page_item{
+		a{  
+			color: #fff;
+			background-color: $color__link;
+	    @include large {
+				border: 3px solid $color__link; 
+	    }
 		}
 	}
 }
+
+ 
+
 /**
  * ".main-navigation"
  * ....
@@ -26,28 +35,7 @@
 .main-navigation {  
 	ul {   
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-
-			// ul {
-			// 	left: -999em;
-			// 	top: 0;
-			// }
-
-			// li {
-			// 	&:hover > ul,
-			// 	&.focus > ul {
-			// 		left: 100%;
-			// 	}
-			// }
-
-			// a {
-			// 	width: 200px;
-			// }
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); 
 		}
-
-		// li:hover > ul,
-		// li.focus > ul {
-		// 	left: auto;
-		// }
 	} 
 }

@@ -9,7 +9,8 @@
 	//...
 	wl_categoryFilters.initialize(); 
 	wl_mqForAssistiveTech.initialize();
-	wl_mobileNavControl.initialize();
+	wl_offscreenContentManager.initialize();
+	// wl_mobileNavControl.initialize();
 
 	//[Page hero] Scroll page down ...
 	$('body').on('click', '#btn-push-down', function(){

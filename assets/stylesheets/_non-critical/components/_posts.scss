@@ -44,6 +44,13 @@ blockquote{
 }
 
 .entry-content{ 
+	a{
+		text-decoration: underline;
+		&:hover, &:focus{
+			color: $color__link;
+			text-decoration: none;
+		}
+	}
 	strong{
 		color: #000;
 	}

@@ -70,6 +70,9 @@
 </div><!-- site -->
 
 
+<div class="offscreen-content-overlay offscreen-content" data-close="offscreen-content"></div>
+
+
 <?php wp_footer(); ?>
 
 </body>

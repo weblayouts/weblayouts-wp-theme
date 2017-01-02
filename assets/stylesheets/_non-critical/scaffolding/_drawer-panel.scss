@@ -32,28 +32,36 @@
         display: none;
     }
 
+    .logo{
+    	position: absolute;
+	    top: 10px;
+	    left: 20px;
+    }
+
 
     .main-navigation{
-        flex-direction: column;
-        .menu{
-            margin-bottom: 30px;
-            padding: 0;
-            width: 100%;
-            li, a{
-                display: block;
-                margin: 0;
-            } 
-            a{
-                padding: 20px 30px;
-                border-radius: 0;
-            }
-            li{
-                border-bottom: 1px solid $color__border-input;
-            }
+    	position: relative;
+    	top: 120px;
+      flex-direction: column;
+      .menu{
+        margin-bottom: 30px;
+        padding: 0;
+        width: 100%;
+        li, a{
+            display: block;
+            margin: 0;
+        } 
+        a{
+            padding: 20px 30px;
+            border-radius: 0;
         }
-        &:before, &:after{
-            display: none;
+        li{
+            border-bottom: 1px solid $color__border-input;
         }
+      }
+      &:before, &:after{
+          display: none;
+      }
     }
 
     .double-border-top{
@@ -89,12 +97,16 @@
         font-weight: 700;
         font-size: 1.2em;
     }
-
-
-    //(body with this class)
-    .drawer-panel--active &{
-        transform: translate(0,0);
+ 		//...
+    &.active {
+      transform: translate(0,0);
     }
+
+
+    // //(body with this class)
+    // .drawer-panel--active &{
+    //   transform: translate(0,0);
+    // }
 }
 
 
@@ -103,25 +115,25 @@
 
 
 .btn-close{ 
-    $size: 40px;
-    background: #000;
-    width: $size;
-    height: $size;
-    border-radius: 0;  
-    &:after, &:before{
-        content: '';
-        position: absolute;
-        background-color: #fff;
-        width: 20px;
-        height: 1px;
-        left: ($size - 20px)/2;
-    }
-    &:before{
-        transform: rotate(45deg);
-    }
-    &:after{
-        transform: rotate(-45deg);
-    }
+  $size: 40px;
+  background: #000;
+  width: $size;
+  height: $size;
+  border-radius: 0;  
+  &:after, &:before{
+      content: '';
+      position: absolute;
+      background-color: #fff;
+      width: 20px;
+      height: 1px;
+      left: ($size - 20px)/2;
+  }
+  &:before{
+      transform: rotate(45deg);
+  }
+  &:after{
+      transform: rotate(-45deg);
+  } 
 }
 
 
